@@ -1,0 +1,54 @@
+======================================== ENVIRONMENT SETUP ========================================
+
+######################################################################################################################################################
+Purpose:
+	Instructions for Setting Up Your Windows Python Environment to use the lib.ui module.
+######################################################################################################################################################
+
+1. install Python 3.7.
+   * Make sure to select the version for your operating system (32-bit/64-bit).
+   * During installation, be sure to check "Add Python 3.7 to PATH".
+
+2. Install winpexpect module.
+   * Open a command prompt and run "pip3 install winpexpect"; for example:
+
+   C:\Users\michael>pip3 install winpexpect
+
+3. Install pexpect module:
+   * In the command prompt, type "where python" then press enter; for example:
+
+   C:\Users\michael>where python
+   C:\Users\michael\AppData\Local\Programs\Python\Python37\
+
+   * Open the folder containing "python.exe"; the default location is shown above:
+
+   C:\Users\<user_name>\AppData\Local\Programs\Python\Python37\
+
+   * Open the sub directory "\Lib\site-packages"; for example:
+
+   C:\Users\<user_name>\AppData\Local\Programs\Python\Python37\Lib\site-packages
+
+   * Find the file (not folder) "pexpect.py" and rename it to "pexpect_for_winpexpect.py".
+   * Return to "\Lib\site-packages",find the file "winpexpect.py" and open it with notepad.
+   * Go to line 18 in the file; it should read:
+
+   from pexpect import spawn, ExceptionPexpect, EOF, TIMEOUT
+
+   * Replace "pexpect" with "pexpect_for_winpexpect", so the line should now read:
+
+   from pexpect_for_winpexpect import spawn, ExceptionPexpect, EOF, TIMEOUT
+
+   * Save the changes and close the file.
+   * Return to CMD and run "pip3 install pexpect"; for example:
+
+   C:\Users\michael>pip3 install pexpect
+
+4. Install pyserial module.
+   * Run "pip3 install pyserial"; for example:
+
+   C:\Users\michael>pip3 install pyserial
+
+5. Install pexpect_serial module version 0.0.4.
+   * Run "pip3 install pexpect_serial==0.0.4"; for example:
+
+   C:\Users\michael>pip3 install pexpect_serial==0.0.4

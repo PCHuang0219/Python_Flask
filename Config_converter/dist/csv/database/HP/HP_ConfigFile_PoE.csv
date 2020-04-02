@@ -1,0 +1,20 @@
+PoE_Port_Status,Searching
+PoE_Port_Fault_Status,None
+PoE_Port_High_Power,No 
+PoE_Port_Max_Configurable_Power,Class 
+PoE_Port_Class,Unknown
+PoE_Port_Output_Voltage_Volts,0
+PoE_Port_Output_Current _mAmps,0
+PoE_Port_Output_Power_Watts,0
+PD1,1
+PD2,2
+PD3,3
+PD4,4
+PD5,5
+PD6,6
+PD7,7
+PD8,8
+PD9,9
+PD10,10
+PD11,11
+PD12,12

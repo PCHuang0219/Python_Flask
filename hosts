@@ -1,0 +1,11 @@
+[TMS_backend_server]
+Taipei_testbed  ansible_host=192.168.3.30   ansible_ssh_user=jlo ansible_ssh_pass=9abcdegf!~00012
+#Hsinchu_testbed ansible_host=192.168.40.115 ansible_ssh_user=jlo ansible_ssh_pass=jlo             ansible_sudo_pass=jlo
+
+[Minipack]
+10.100.43.132  ansible_ssh_user=root ansible_ssh_pass=1111
+
+[TMS_backend_server:vars]
+# Anber:Can't use python3 because ansible docker_container_info module not support python3 (docker.py)
+ansible_python_interpreter=/usr/bin/python
+ansible_ssh_extra_args='-o StrictHostKeyChecking=no'

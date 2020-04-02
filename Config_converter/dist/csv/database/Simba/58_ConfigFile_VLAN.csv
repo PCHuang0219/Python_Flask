@@ -1,0 +1,37 @@
+Variable,Value,Description,Json Variable,Mapping Value
+VLAN_ID_Max,4094,Maximum VLAN ID number,SYS_ADPT_MAX_VLAN_ID,
+VLAN_Num_Max,4094,Maximum VLAN numbers,SYS_ADPT_MAX_NBR_OF_VLAN,
+VLAN_Type_Default,Static,Default vlan type,,
+VLAN_Ingress_Rule_Default,Disabled,"Ingress rule. Argument: Enabled, Disabled.",SYS_DFLT_1Q_PORT_INGRESS_FILTERING,"""1 2"" ""Enabled Disabled"""
+VLAN_Membership_Mode_Default,Hybrid,"Membership mode. Argument: Hybrid, Access, trunk.",,
+VLAN_Jumbo_Frame_Default,Disabled,"Specifies jumbo status. Argument: Enabled, Disabled.",SYS_DFLT_JUMBO_FRAME_STATUS,"""1 2"" ""Enabled Disabled"""
+VLAN_Jumbo_Frame_Size_With_Tag,False,Jumbo frame size with tag,,
+VLAN_Jumbo_Frame_Size_Default,1518,Default jumbo frame size,SYS_DFLT_PORT_MTU,
+VLAN_Jumbo_Frame_Size_Max,10240,Maxinum jumbo frame size,SYS_ADPT_MAX_JUMBO_MTU,
+VLAN_Jumbo_Frame_Size_Min,1536,Minimum jumbo frame size,SYS_ADPT_IF_MTU,
+VLAN_Jumbo_Frame_Set_ByPort,0,"1: Set by port. 0: Don't set by port. Argument: 1, 0.",SYS_CPNT_SWCTRL_MTU_CONFIG_MODE,"""2 3"" ""1 0"""
+VLAN_Maximum_VLAN_Name_Length,32,Maximum VLAN name length,SYS_ADPT_MAX_VLAN_NAME_LEN,
+VLAN_Member_Type_In_Trunk_Mode,Tagged,"Port joins native VLAN as tagged member or untagged member When port is in trunk mode. Argument: tagged, untagged.",,
+VLAN_Acceptable_Frame_Type_Default,All,Acceptable Frame Type.,,
+VLAN_Access_Mode_Support,true,Support access mode on DUT port or not,SYS_CPNT_VLAN_ACCESS,
+VLAN_DHCP_Client_Vendor_ClassID_Support,true,Support DHCP client vendor class ID or not,SYS_CPNT_DHCP_CLIENT_CLASSID,
+VLAN_PVID_Is_VID_Of_Tagged_Member,true,The PVID of a port can be set to a VID when the port is the tagged member of that VLAN or not,,
+VLAN_Port_Remove_From_PVID,true,Port can be removed from the VLAN of PVID or not.,,
+VLAN_UpDown_Trap_Log_Support,true,Support VLAN Up/Down SNMP trap/System log/Remote log or not.,,
+VLAN_Port_Join_Nonexistent_VLAN_Support,true,DUT Port can join un-exist VLAN or not. 1: can. 0: cannot.,,
+MAC_VLAN_Max_Mac_Vlan_Entry,32,,SYS_ADPT_MAX_NBR_OF_MAC_VLAN_ENTRY,
+Voice_VLAN_Status_Default,Disabled,Default voice vlan status.,,
+Voice_VLAN_Aging_Time_Default,1440,Default voice vlan aging time in minutes. ,,
+Voice_VLAN_Aging_Time_Min,5,Minimum voice vlan aging time in minutes. ,,
+Voice_VLAN_Aging_Time_Max,43200,Maximum voice vlan aging time in minutes. ,,
+Voice_VLAN_Mode_Default,None,"Default voice vlan mode. Argument: Auto, Menual, None.",SYS_DFLT_ADD_VOICE_VLAN_PORT_MODE,"""1 2 3"" ""auto manual none"""
+Voice_VLAN_Security_Mode_Default,Disabled,"Default voice VLAN security mode. Argument: Enabled, Disabled.",SYS_DFLT_ADD_VOICE_VLAN_PORT_SECURITY_STATE,"""1 2"" ""Enabled Disabled"""
+Voice_VLAN_Rule_Default,OUI,"Default voice VLAN rule. Argument: OUI, LLDP.","SYS_DFLT_ADD_VOICE_VLAN_PORT_RULE_LLDP_STATUS
+SYS_DFLT_ADD_VOICE_VLAN_PORT_RULE_OUI_STATUS","""SYS_DFLT_ADD_VOICE_VLAN_PORT_RULE_LLDP_STATUS"" : 2  &  ""SYS_DFLT_ADD_VOICE_VLAN_PORT_RULE_OUI_STATUS"" : 1  => OUI
+""SYS_DFLT_ADD_VOICE_VLAN_PORT_RULE_LLDP_STATUS"" : 1  &  ""SYS_DFLT_ADD_VOICE_VLAN_PORT_RULE_OUI_STATUS"" : 2  => LLDP
+""SYS_DFLT_ADD_VOICE_VLAN_PORT_RULE_LLDP_STATUS"" : 1  &  ""SYS_DFLT_ADD_VOICE_VLAN_PORT_RULE_OUI_STATUS"" : 1  => OUI, LLDP"
+Voice_VLAN_Priority_Default,6,Default voice VLAN priority. ,SYS_DFLT_ADD_VOICE_VLAN_PORT_PRIORITY,
+Voice_VLAN_Priority_Min,0,Minimum voice VLAN priority. ,MIN_voiceVlanPortPriority,
+Voice_VLAN_Priority_Max,6,Maximum voice VLAN priority. ,MAX_voiceVlanPortPriority,
+Voice_VLAN_IP_DSCP_Support,1,1: DUT support IP-DSCP. 0: DUT does not support IP-DSCP.,,
+Voice_VLAN_Num_OUI_Max,16,Max number of OUI,SYS_ADPT_ADD_VOICE_VLAN_MAX_NBR_OF_OUI,

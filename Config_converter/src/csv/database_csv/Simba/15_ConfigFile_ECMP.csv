@@ -1,0 +1,4 @@
+Variable,Value,Description,Json Variable,Mapping Value
+SYS_CPNT_ECMP_BALANCE_MODE,TRUE,,,
+SYS_CPNT_IPV6_ROUTING,TRUE,,,
+SYS_DFLT_ALLOWED_ECMP_NBR_PER_ROUTE,32,,,

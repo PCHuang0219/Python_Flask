@@ -1,0 +1,6 @@
+Variable,Value,Description,Json Variable,Mapping Value
+Kill_Task_Name,IP_SERVICE_PROC,,,
+Watchdog_Log_Task_Name,IP_SERVICE_GROU,,,
+Watchdog_Repeat_Times,1,,,
+Watchdog_Wait_Time,900,,,
+Kill_Task_Name_2,IP_SERVICE_PROC,,,

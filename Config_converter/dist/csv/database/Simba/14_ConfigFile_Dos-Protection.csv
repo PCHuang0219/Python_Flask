@@ -1,0 +1,17 @@
+Variable,Value,Description,Json Variable,Mapping Value
+DoS_LAND_Default,enabled,Enabled or Disabled.,,"""true false"" ""enabled disabled"""
+DoS_SMURF_Default,enabled,Enabled or Disabled.,,"""true false"" ""enabled disabled"""
+DoS_NullScan_Default,enabled,Enabled or Disabled.,,"""true false"" ""enabled disabled"""
+DoS_SYNFIN_Default,enabled,Enabled or Disabled.,,"""true false"" ""enabled disabled"""
+DoS_TCPUDP_PortZero_Default,enabled,Enabled or Disabled.,,"""true false"" ""enabled disabled"""
+DoS_Xmas_Default,enabled,Enabled or Disabled.,,"""true false"" ""enabled disabled"""
+DoS_EchoChargen_Default,disabled,Enabled or Disabled.,,
+DoS_TCPFlood_Default,disabled,Enabled or Disabled.,,
+DoS_UDPFlood_Default,disabled,Enabled or Disabled.,,
+DoS_WinNuke_Default,disabled,Enabled or Disabled.,,
+DoS_EchoChargen_Rate_Default,1000,kbits per second,SYS_DFLT_DOS_ECHO_CHARGEN_RATE_LIMIT,
+DoS_TCPFlood_Rate_Default,1000,kbits per second,SYS_DFLT_DOS_TCP_FLOODING_RATE_LIMIT,
+DoS_UDPFlood_Rate_Default,1000,kbits per second,SYS_DFLT_DOS_UDP_FLOODING_RATE_LIMIT,
+DoS_WinNuke_Rate_Default,1000,kbits per second,SYS_DFLT_DOS_WIN_NUKE_RATE_LIMIT,
+DoS_RateLimit_Min,64,kbits per second,SYS_ADPT_DOS_MIN_RATELIMIT,
+DoS_RateLimit_Max,2000,kbits per second,SYS_ADPT_DOS_MAX_RATELIMIT,

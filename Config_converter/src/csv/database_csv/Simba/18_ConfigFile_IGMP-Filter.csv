@@ -1,0 +1,6 @@
+Variable,Value,Description,Json Variable,Mapping Value
+IGMP_Filter_Default_Status,Disabled,Default status,SYS_DFLT_IGMP_FILTER_STATUS,"""1 2"" ""Enabled Disabled"""
+IGMP_Filter_Maximum_Group,1023,Max number of groups,SYS_ADPT_IGMP_MAX_SUPPORT_GROUP,
+IGMP_Filter_Minimum_Group,1,Min number of groups,,
+IGMP_Filter_Port_Default_Action,Deny,Default action,SYS_DFLT_IGMP_THROTTLE_ACTION,"""1 2"" ""Replace Deny"""
+IGMP_Filter_Maximum_Profile_Count,60,Maxumun profile couunt,,

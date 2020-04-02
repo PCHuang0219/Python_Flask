@@ -1,0 +1,2 @@
+Variable,Value,Description,Json Variable,Mapping Value
+Statistics_Max_PacketSize,1518,Max size of packet allowed,SYS_DFLT_PORT_MTU,

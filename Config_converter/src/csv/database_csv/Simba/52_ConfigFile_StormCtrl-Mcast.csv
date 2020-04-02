@@ -1,0 +1,10 @@
+Variable,Value,Description,Json Variable,Mapping Value
+McastStorm_Default_Rate,64,McastStorm default rate (kbit/s),SYS_DFLT_MSTORM_RATE_LIMIT,
+McastStorm_Default_Status,Disabled,McastStorm default status : Enabled / Disabled,SYS_DFLT_MCAST_STORM_STATUS,"""1 2"" ""Enabled Disabled"""
+McastStorm_Error_Range,3,Error range ,,
+McastStorm_Error_Range_Unit,Percent,Error range unit : Percent / Packets,,
+McastStorm_Group,1,McastStrom group,,
+McastStorm_Max,1000000,McastStorm maximum rate (kbit/s),SYS_ADPT_MAX_MSTORM_RATE_LIMIT,
+McastStorm_Min,64,McastStorm minimum rate (kbit/s),SYS_ADPT_MIN_MSTORM_RATE_LIMIT,
+McastStorm_Send_Packets_Wating_Time,8000,Milliseconds,,
+McastStorm_Unit,bps,McastStorm unit: bps / packets,,

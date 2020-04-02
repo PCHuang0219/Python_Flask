@@ -1,0 +1,32 @@
+######################################################################################################################################################
+csv<->ini Conversion Utility Operation Procedure
+
+Author: Michael Chen <michael_chen@accton.com>
+Copyright(c) Accton Technology Corporation, 2019
+######################################################################################################################################################
+
+1. Open a terminal to the root path of  the converter distribution directory. For example:
+
+mike@EVA03:/mnt/d/OneDrive - Accton Technology Corporation/TMS_back_end_server/Config_converter/dist$
+
+2. Place the  source csv and ini files to be converted inside their respective directories. For example, to convert the DUT_Config.csv file into ini
+  format, pass the file name as the argument following the "./convert" executable. The conversion result will be stored inside the ini directory
+  with a timestamp:
+
+mike@EVA03:/mnt/d/OneDrive - Accton Technology Corporation/TMS_back_end_server/Config_converter$ ./convert DUT_Config.csv
+
+3. Optionally, specify a second argument as the destination file name. For example:
+
+mike@EVA03:/mnt/d/OneDrive - Accton Technology Corporation/TMS_back_end_server/Config_converter$ ./convert DUT_Config.csv test.ini
+
+4. To convert a directory containing a data structure of csv files into a single ini file, provide the top level directory name as the first argument to
+  the same command:
+
+mike@EVA03:/mnt/d/OneDrive - Accton Technology Corporation/TMS_back_end_server/Config_converter$ ./convert database database.ini
+
+4. To convert a single-level ini file into csv format, pass the ini file name as the first argument. The conversion result will be stored in the csv
+  directory:
+
+mike@EVA03:/mnt/d/OneDrive - Accton Technology Corporation/TMS_back_end_server/Config_converter$ ./convert DUT_Config.ini
+
+Enjoy!

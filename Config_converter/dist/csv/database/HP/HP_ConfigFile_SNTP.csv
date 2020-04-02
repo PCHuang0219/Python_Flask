@@ -1,0 +1,10 @@
+SNTP_Default_Poll_Interval,16,Seconds of SNTP poll interval
+SNTP_Default_Status,Disabled,SNTP client Enabled / Disabled
+SNTP_Default_Server,Disabled,SNTP server Enabled / Disabled
+SNTP_Default_Server_IP,192.168.1.100,IP of SNTP server
+SNTP_Server_Num_Max,1,
+SNTP_Server_IP_1,192.168.1.100,IP of SNTP server_1
+SNTP_Server_IP_2,192.168.1.101,IP of SNTP server_2
+SNTP_Server_IP_3,192.168.1.102,IP of SNTP server_3
+SNTP_Server_IP_4,192.168.1.103,IP of SNTP server_4
+SNTP_Server_Inexistent_IP,192.168.3.201,SNTP_Server_Inexistent_IP

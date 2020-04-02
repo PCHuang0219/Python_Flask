@@ -1,0 +1,3 @@
+Variable,Value,Description,Json Variable,Mapping Value
+DataVLANPing_Size_Max,1472,maximium of data vlan ping size,,
+DataVLANPing_Size_Min,18,minimum of data vlan ping size,,

@@ -1,0 +1,6 @@
+Variable,Value,Description,Json Variable,Mapping Value
+IPSG_Filter_Type_Default,DISABLED,SYS_DFLT_IPSRCGUARD_FILTER_MODE,"""0 1 2"" ""Disabled SIP SIP-MAC""",
+IPSG_Filter_Table_Default,ACL,SYS_DFLT_IPSRCGUARD_FILTER_TABLE_MODE,"""1 2"" ""ACL MAC""",
+IPSG_ACL_Table_MaxBinding,5,SYS_DFLT_IPSRCGUARD_ACL_MODE_PORT_ENTRY_LIMIT,,
+IPSG_Mac_Table_MaxBinding,1024,,,
+IPSG_Max_Binding_Table_Per_System,100,,,

@@ -1,0 +1,11 @@
+Port_Channel_Max,16,Maximum port-channel in DUT (the value here should be integer)
+Port_Channel_Max_Member,8,Maximum number of FE port per port-channel in DUT (the value here should be integer)
+Port_Channel_LACP_Port_Priority,32768,Default LACP port priority
+Port_Channel_LACP_Timeout,long,Default LACPDU timeout
+Port_Channel_Flow_Control,Disable,Default status of Flow Control
+,,
+,,
+,,
+,,
+,,
+,,

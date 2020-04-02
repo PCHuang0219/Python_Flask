@@ -1,0 +1,4 @@
+Variable,Value,Description,Json Variable,Mapping Value
+MAC_Filter_ID_Max_Count,64,MAC filter ID max count,SYS_ADPT_NETACCESS_MAX_FILTER_ID,
+MAC_Filter_Stress_Test_Time,120,This unit is minute,,
+MAC_Filter_Max_Count,200,MAC filter max count,,

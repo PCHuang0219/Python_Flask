@@ -1,0 +1,7 @@
+Variable,Value,Description,Json Variable,Mapping Value
+SYSLOG_All_Status_Default,enabled,default SYSLOG status to all supported destinations,SYS_DFLT_SYSLOG_STATUS,"""1 2"" ""enabled disabled"""
+SYSLOG_Trap_Status_Default,disabled,default SYSLOG status to remote host,SYS_DFLT_REMOTELOG_STATUS,"""1 2"" ""enabled disabled"""
+SYSLOG_RAM_Level_Default,7,default RAM logging level,SYS_DFLT_SYSLOG_UC_LOG_LEVEL,
+SYSLOG_Flash_Level_Default,3,default flash logging level,SYS_DFLT_SYSLOG_FLASH_LOG_LEVEL,
+SYSLOG_Trap_Level_Default,7,default trap logging level,SYS_DFLT_REMOTELOG_LEVEL,
+SYSLOG_Logging_Facility_Default,23,default logging facility,SYS_DFLT_REMOTELOG_FACILITY_TYPE,

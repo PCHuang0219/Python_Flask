@@ -1,0 +1,12 @@
+Variable,Value,Description,Json Variable,Mapping Value
+ACL_Max_Entry,128,Maximum ACL number per system,SYS_ADPT_MAX_NBRS_OF_ACL,
+ACL_ACE_Max,128,Maximum ACE number per ACL,SYS_ADPT_MAX_NBRS_OF_ACE,
+ACL_ACE_Max_Per_System,512,Maximum ACE number per system,SYS_ADPT_MAX_NBRS_OF_ACE_OF_SYSTEM,
+ACL_VID_Mask_check,True,"Check VID mask. Argument: True, False.",,
+ACL_Source_Port_Mask_check,True,"Check source mask. Argument: True, False.",,
+ACL_Destination_Port_Mask_check,True,"Check destination mask. Argument: True, False.",,
+ACL_Control_Flag_Mask_check,True,"Check IPv6 Control flag mask. Argument: True, False.",,
+ACL_Support_TOS,False,"Support TOS. Argument: True, False.",SYS_CPNT_ACL_IP_EXT_TOS,
+ACL_IPV6_EXT_SRC_IP_ADDR,True,"Support Ipv6 extended source IP address. Argument: True, False.",SYS_CPNT_ACL_IPV6_EXT_SRC_IP_ADDR,
+ACL_IPV6_EXT_DST_IP_ADDR,False,"Support Ipv6 extended destination IP address. Argument: True, False.",SYS_CPNT_ACL_IPV6_EXT_DST_IP_ADDR,
+ACL_Support_Egress_Binding,False,"Support ""ACL binding on egress direction of DUT port"" or not. Argument: True, False.",SYS_CPNT_QOS_V2_EGRESS_PORT,

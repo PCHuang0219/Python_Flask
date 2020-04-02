@@ -1,0 +1,2 @@
+web_server_ip,web_server_port,db_ip,db_port
+210.63.221.19,8000,192.168.40.82,27017

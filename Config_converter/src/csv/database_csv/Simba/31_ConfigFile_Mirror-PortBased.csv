@@ -1,0 +1,5 @@
+Variable,Value,Description,Json Variable,Mapping Value
+Mirror_PortBased_Error_Range,1,Allowable error (percent number of packets),,
+Mirror_PortBased_Tx_Count,10000,Number of packets to send,,
+Mirror_PortBased_Loading,10,Traffic loading (percent max transmit rate),,
+Mirror_ProtBased_Error_Range,0,Error range for Mirror-PortBased_old,,

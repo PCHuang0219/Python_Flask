@@ -1,0 +1,7 @@
+PING_Count_Min,1,Minimium Number of packets to send
+PING_Count_Max,15,Maximium Number of packets to send
+PING_Size_Min,0,Minimium size of packets to send
+PING_Size_Max,13000,Maximium size of packets to send
+PING_Count_Default,3,Default ping count
+PING_Size_Default,0,Default ping size
+PING_Interval_Default,3,Default ping interval

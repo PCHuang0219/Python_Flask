@@ -1,0 +1,5 @@
+Variable,Value,Description,Json Variable,Mapping Value
+Port_Sec_Default_Max_MAC_Count,0,Default maximum MAC number per port,SYS_DFLT_PORT_SECURITY_MAX_MAC_COUNT,
+Port_Sec_Status,Disabled,Default status of port security per port,SYS_DFLT_PORT_SECURITY_STATUS,"""1 2"" ""enabled disabled"""
+Port_Sec_Max_MAC_Count,1024,Maximum MAC number per port,SYS_ADPT_MAX_NBR_OF_AUTO_LEARN_MAC,
+Port_Sec_Default_Action,disable,default port security intrusion action,SYS_DFLT_PORT_SECURITY_ACTION_STATUS,"""1 2 3 4"" ""disable shutdown trap trap-and-shutdown"""

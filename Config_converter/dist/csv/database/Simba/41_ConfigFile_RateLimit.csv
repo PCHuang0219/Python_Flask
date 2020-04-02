@@ -1,0 +1,27 @@
+Variable,Value,Description,Json Variable,Mapping Value
+Rate_Limit_Average_Capture_Count,40,Capture packets count,,
+Rate_Limit_Chip_Firm,Broadcom,"Chip Frim : Broadcom(F1) / Marvell(F1) / RealTek(F2) / MTK(F2) / Formula1 / Formula2
+Formula 1 : Rate * 1000 / (PacketSize * 8)
+ForMula 2 : Rate * 1000 / (PacketSize * 8 + 64 +96)",,
+Rate_Limit_Default_Error_Range,3,Default receive error range,,
+Rate_Limit_Default_Error_Range_Unit,Percent,Error range unit : Percent / Packets,,
+Rate_Limit_Egress_Default_Rate,100000,Egress default rate (kbit/s),,
+Rate_Limit_Egress_Default_Status,Disabled,Egress filter default status : Enabled / Disabled,SYS_DFLT_EGRESS_RATE_LIMIT_STATUS,"""1 2"" ""Enabled Disabled"""
+Rate_Limit_Egress_Error_Range,3,Egress receive error range,,
+Rate_Limit_Egress_Error_Range_Unit,Percent,Error range unit : Percent / Packets,,
+Rate_Limit_Egress_Maximum,1000000,Egress Max Value,SYS_ADPT_MAX_RATE_LIMIT,
+Rate_Limit_Egress_Minimum,64,Egress Min Value,SYS_ADPT_MIN_RATE_LIMIT,
+Rate_Limit_Ingress_Default_Rate,100000,Ingress default rate (kbit/s),,
+Rate_Limit_Ingress_Default_Status,Disabled,Ingress filter default status : Enabled / Disabled,SYS_DFLT_INGRESS_RATE_LIMIT_STATUS,"""1 2"" ""Enabled Disabled"""
+Rate_Limit_Ingress_Error_Range,3,Ingress receive error range,,
+Rate_Limit_Ingress_Error_Range_Unit,Percent,Error range unit : Percent / Packets,,
+Rate_Limit_Ingress_Maximum,1000000,Ingress Max Value,SYS_ADPT_MAX_RATE_LIMIT,
+Rate_Limit_Ingress_Minimum,64,Ingress Min Value,SYS_ADPT_MIN_RATE_LIMIT,
+Rate_Limit_Max_Speed,1G,"Max Speed : 100M, 1G, 10G, 40G, 100G",,
+Rate_Limit_Per_Capture_Count,6,Capture packets count,,
+Rate_Limit_Send_Packets_Wating_Time,10000,Milliseconds,,
+Rate_Limit_Test_Type,Both,"Average Packets, Per Second Rate, Both Test",,
+Rate_Limit_Egress_Support,True,Ratelimit egress support,SYS_CPNT_EGRESS_RATE_LIMIT,
+Rate_Limit_Ingress_Support,True,Ratelimit ingress support,SYS_CPNT_INGRESS_RATE_LIMIT,
+Rate_Limit_Unit,kbits,Ratelimit unit: kbits / packets,,
+Rate_Limit_Wait_Time,5,Ratelimit wait time (second),,

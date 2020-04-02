@@ -1,0 +1,6 @@
+Variable,Value,Description,Json Variable,Mapping Value
+WebAuth_Default_Max_Login_Attempt,3,Max login attempt count,SYS_DFLT_WEBAUTH_MAX_LOGIN_ATTEMPTS,
+WebAuth_Default_Port_Status,Disable,Disable / Enable,SYS_DFLT_WEBAUTH_PORT_STATUS,"""1 2"" ""Enabled Disabled"""
+WebAuth_Default_Quiet_Period,60,Second,SYS_DFLT_WEBAUTH_QUIET_PERIOD,
+WebAuth_Default_Session_Timeout,3600,Second,SYS_DFLT_WEBAUTH_SESSION_TIMEOUT,
+WebAuth_Default_Global_Status,Disable,Disabled / Enable,SYS_DFLT_WEBAUTH_STATUS,"""1 2"" ""Enabled Disabled"""

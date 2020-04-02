@@ -1,0 +1,10 @@
+Variable,Value,Description,Json Variable,Mapping Value
+UcastStorm_Default_Rate,64,UcastStorm default rate (kbit/s),SYS_DFLT_UNKUSTORM_RATE_LIMIT,
+UcastStorm_Default_Status,Disabled,UcastStorm default status : Enabled / Disabled,SYS_DFLT_UNKUCAST_STORM_STATUS,"""1 2"" ""Enabled Disabled"""
+UcastStorm_Error_Range,3,Error range,,
+UcastStorm_Error_Range_Unit,Percent,Error range unit : Percent / Packets,,
+UcastStorm_Group,1,UcastStrom group,,
+UcastStorm_Max,1000000,UcastStorm maximum rate (kbit/s),SYS_ADPT_MAX_UNKNOWN_USTORM_RATE_LIMIT,
+UcastStorm_Min,64,UcastStorm minimum rate (kbit/s),SYS_ADPT_MIN_UNKNOWN_USTORM_RATE_LIMIT,
+UcastStorm_Send_Packets_Wating_Time,8000,Milliseconds,,
+UcastStorm_Unit,bps,UcastStorm unit: bps / packets,,

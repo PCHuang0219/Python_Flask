@@ -1,0 +1,2 @@
+Variable,Value,Description,Json Variable,Mapping Value
+StaticRoute_PKT_Lost_Tolerance,0.001,Packet torrence(%),,

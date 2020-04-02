@@ -1,0 +1,49 @@
+Variable,Value,Description,Json Variable,Mapping Value
+CFM_Global_Status_Default,Enabled,,SYS_DFLT_CFM_GLOBAL_STATUS,"""1 2"" ""Enabled Disabled"""
+CFM_Port_Status_Default,Enabled,,SYS_DFLT_CFM_PORT_STATUS,"""1 2"" ""Enabled Disabled"""
+CFM_Domain_Index_Max,65535,,SYS_ADPT_CFM_MAX_MD_INDEX,
+CFM_Domain_Name_Length,43,,,
+CFM_Domain_Num_MAX,8,maximum number of MD domain,SYS_ADPT_CFM_MAX_NBR_OF_MD,
+CFM_MA_Index_Min,1,,,
+CFM_MA_Index_Max,2147483647,,,
+CFM_MA_Num_MAX,32,,SYS_ADPT_CFM_MAX_NBR_OF_MA,
+CFM_MEP_Num_MAX,32,,SYS_ADPT_CFM_MAX_NBR_OF_MEP_Error,
+CFM_Remote_MEP_Num_MAX,200,,SYS_ADPT_CFM_MAX_NBR_OF_REMOTE_MEP,
+CFM_MIP_Support,0,DUT supports MIP or not. 1: support. 0: no support.,,
+CFM_AIS_Support,1,,,
+CFM_AIS_Status_Default,Enabled,,SYS_DFLT_CFM_AIS_STATUS,"""0 1"" ""Enabled Disabled"""
+CFM_CC_Interval_Default,4,,,
+CFM_CCM_Transmission_Status,Enabled,,,
+CFM_Index_Of_First_Global_MAC,17,"< for S900 only >
+The index of first global MAC in MAC pool
+Console#sh eth cfm configuration mac-pool",,
+CFM_First_Local_MAC,02-C0-A8-00-01-01,"< for S900 only >
+02-C0-A8-00-01-01",,
+CFM_SNMP_TRAP_CC_ALL,Disabled,,SYS_DFLT_CFM_SNMP_TRAP_CC_ALL,"""false true"" ""Disabled Enabled"""
+CFM_SNMP_TRAP_CC_CONFIG,Disabled,,SYS_DFLT_CFM_SNMP_TRAP_CC_CONFIG,"""false true"" ""Disabled Enabled"""
+CFM_SNMP_TRAP_CC_LOOP,Disabled,,SYS_DFLT_CFM_SNMP_TRAP_CC_LOOP,"""false true"" ""Disabled Enabled"""
+CFM_SNMP_TRAP_CC_MEP_DOWN,Disabled,,SYS_DFLT_CFM_SNMP_TRAP_CC_MEP_DOWN,"""false true"" ""Disabled Enabled"""
+CFM_SNMP_TRAP_CC_MEP_UP,Disabled,,SYS_DFLT_CFM_SNMP_TRAP_CC_MEP_UP,"""false true"" ""Disabled Enabled"""
+CFM_SNMP_TRAP_CROSS_CHECK_ALL,Disabled,,SYS_DFLT_CFM_SNMP_TRAP_CROSS_CHECK_ALL,"""false true"" ""Disabled Enabled"""
+CFM_SNMP_TRAP_CROSS_CHECK_MA_UP,Disabled,,SYS_DFLT_CFM_SNMP_TRAP_CROSS_CHECK_MA_UP,"""false true"" ""Disabled Enabled"""
+CFM_SNMP_TRAP_CROSS_CHECK_MEP_MISSING,Disabled,,SYS_DFLT_CFM_SNMP_TRAP_CROSS_CHECK_MEP_MISSING,"""false true"" ""Disabled Enabled"""
+CFM_SNMP_TRAP_CROSS_CHECK_UNKNOWN,Disabled,,SYS_DFLT_CFM_SNMP_TRAP_CROSS_CHECK_UNKNOWN,"""false true"" ""Disabled Enabled"""
+CFM_Crosscheck_Start_Delay_Config_Support,1,Can configure cross-check start delay or not? 1: can. 0: cannot.,,
+CFM_Crosscheck_Start_Delay_Default,10,in seconds,SYS_DFLT_CFM_CROSSCHECK_START_DELAY,
+CFM_Achieve_Hold_Time_Config_Support,1,Can configure achieve-hold-time or not? 1: can. 0: cannot.,,
+CFM_Linktrace_Cache_Status_Default,Enabled,,SYS_DFLT_CFM_LINKTRACE_CACHE_STATUS,"""1 2"" ""Enabled Disabled"""
+CFM_Linktrace_Cache_Hold_Time_Default,100,in minutes,SYS_DFLT_CFM_LINKTRACE_HOLD_TIME,
+CFM_Linktrace_Cache_Hold_Time_Max,65535,in minutes,,
+CFM_Linktrace_Cache_Hold_Time_Min,1,in minutes,,
+CFM_Linktrace_Cache_Size_Max,100,in entries,SYS_DFLT_CFM_LINKTRACE_CACHE_SIZE,
+CFM_Fault_Alarm_Time_Default,3,in seconds,SYS_DFLT_CFM_FNG_LOWEST_ALARM_TIME,
+CFM_Fault_Alarm_Time_Min,3,,,
+CFM_Fault_Alarm_Time_Max,10,,,
+CFM_Fault_Reset_Time_Default,10,in seconds,SYS_DFLT_CFM_FNG_LOWEST_RESET_TIME,
+CFM_dot1agCfmMepUpTrap_OID,Null,It need to fill in in ConfigFile_xxxxx.tcl  (Private MIB OID),,
+CFM_dot1agCfmMepDownTrap_OID,Null,It need to fill in in ConfigFile_xxxxx.tcl  (Private MIB OID),,
+CFM_dot1agCfmConfigFailTrap_OID,Null,It need to fill in in ConfigFile_xxxxx.tcl  (Private MIB OID),,
+CFM_dot1agCfmLoopFindTrap_OID,Null,It need to fill in in ConfigFile_xxxxx.tcl  (Private MIB OID),,
+CFM_dot1agCfmMepUnknownTrap_OID,Null,It need to fill in in ConfigFile_xxxxx.tcl  (Private MIB OID),,
+CFM_dot1agCfmMepMissingTrap_OID,Null,It need to fill in in ConfigFile_xxxxx.tcl  (Private MIB OID),,
+CFM_dot1agCfmMaUpTrap_OID,Null,It need to fill in in ConfigFile_xxxxx.tcl  (Private MIB OID),,

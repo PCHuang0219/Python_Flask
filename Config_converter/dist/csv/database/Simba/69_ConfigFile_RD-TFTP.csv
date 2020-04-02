@@ -1,0 +1,11 @@
+Variable,Value,Description,Json Variable,Mapping Value
+TFTP_IP1,192.168.1.100,,,
+TFTP_MASK1,255.255.255.0,,,
+TFTP_IP2,192.168.1.101,,,
+TFTP_MASK2,255.255.255.0,,,
+TFTP_ERROR_IP,192.168.1.103,,,
+TFTP_ERROR_MASK,255.255.255.0,,,
+FTP_NAME1,admin,,,
+FTP_PASSED1,admin,,,
+SFTP_NAME1,admin,,,
+SFTP_PASSED1,admin,,,

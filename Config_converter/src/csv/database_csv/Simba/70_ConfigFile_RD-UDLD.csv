@@ -1,0 +1,4 @@
+Variable,Value,Description,Json Variable,Mapping Value
+RD_UDLD_OUI,0x0012cf,,,
+RD_UDLD_Message_Interval_Default,15,,,
+RD_UDLD_Recovery_Interval_Default,300,,,

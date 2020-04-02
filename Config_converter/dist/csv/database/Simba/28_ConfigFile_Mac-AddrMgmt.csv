@@ -1,0 +1,17 @@
+Variable,Value,Description,Json Variable,Mapping Value
+MAC_Total_Number_of_MAC_Address,16384,maximum MAC address table size,SYS_ADPT_MAX_NBR_OF_L2_MAC_ADDR_ENTRY_ON_CHIP,
+MAC_Number_of_Static_MAC_Address,1024,maximum static addresses,SYS_ADPT_MAX_NBR_OF_STATIC_MAC_PER_PORT,
+MAC_Number_of_Test_MAC_Address,1000,"Because a large number of MAC addresses are collided in hash table,
+it needs to send more then 16384 SA packets to try maxinum entries of MAC address table.
+Use MAC_Total_Number_of_MAC_Address + MAC_Number_of_Test_MAC_Address to try maxinum entries of MAC address table.",,
+MAC_DUT_Learn_1K_MAC,30,The time of DUT learn 1K MAC addresses. Unit: seconds.,,
+MAC_DUT_Learn_Max_MAC,600,The time of DUT learn max MAC addresses. Unit: seconds.,,
+MAC_Address_Aging_Default,300,Default MAC address aging time. Unit: seconds.,SYS_DFLT_L2_DYNAMIC_ADDR_AGING_TIME,
+MAC_Address_Aging_Min,10,Minimum MAC address aging time. Unit: seconds.,SYS_ADPT_MIN_DOT1D_TP_AGING_TIME,
+MAC_Address_Aging_Max,844,Maximum MAC address aging time. Unit: seconds.,SYS_ADPT_MAX_DOT1D_TP_AGING_TIME,
+MAC_Support_Port_Move_log,0,"Suport port move log or not. Argument: 1 (support), 0 (no support). ",,
+MAC_Static_MAC_Type,Config,"The type of static MAC address in MAC address table under CLI. Argument: Static, Config.",,
+MAC_learning_Default,Enabled,"Default status of MAC learning on specified interface. Argument: Enabled, Disabled.",SYS_DFLT_L2_DYNAMIC_ADDR_AGING_STATUS,"""1 0"" ""Enabled Disabled"""
+MAC_Learning_By_VLAN_Support,0,"Support MAC learning on specified VLAN or not. Argument: 0, 1.",SYS_CPNT_AMTR_VLAN_MAC_LEARNING,"""TRUE FALSE"" ""1 0"" "
+MAC_learning_By_VLAN_Default,Enabled,"Default status of MAC learning on specified VLAN. Argument: Enabled, Disabled.",,
+MAC_reserve_for_stacking,0,"Reserve 1 MAC address for stacking or not. EX: ECS4510/ECS4620 reserve 1 MAC address entry for stacking, so the max MAC table is 16383.",,

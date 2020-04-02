@@ -1,0 +1,4 @@
+Variable,Value,Description,Json Variable,Mapping Value
+LinkDetection_Status_Default,disabled,Default port link detection status,SYS_DFLT_NETACCESS_LINK_DETECTION_STATUS,"""1 2"" ""enabled disabled"""
+LinkDetection_Mode_Default,Link-down,Default link detection mode,SYS_DFLT_NETACCESS_LINK_DETECTION_MODE,"""1 2 3"" ""link-up link-down link-up-down"""
+LinkDetection_Action_Default,Trap,Default link detection action,SYS_DFLT_NETACCESS_LINK_DETECTION_ACTION,"""1 2 3"" ""trap shutdown trap-and-shutdown"""

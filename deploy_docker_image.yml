@@ -1,0 +1,97 @@
+---
+- hosts: TMS_backend_server
+  vars:
+    ANSIBLE_HOST_KEY_CHECKING: False
+    container_name: flask-app
+    image_name: flask-app:latest
+    docker_sock: /var/run/docker.sock
+    backend_log_file_path: /tmp/log
+    store_docker_file_path: /tmp/docker
+
+  gather_facts: no
+  tasks:
+    - name: Connect to servers
+      ping:
+      register: message
+    
+    - name: Print debug message
+      debug: 
+        msg: "{{ message }}"
+
+    - name: Check {{ backend_log_file_path }} exists
+      stat:
+        path: "{{ backend_log_file_path }} "
+      register: folder_state
+
+    - name: Create {{ backend_log_file_path }} if it is not exists
+      become: yes
+      file:
+        path: "{{ backend_log_file_path }}"
+        state: directory
+        mode: 0755
+        group: "{{ ansible_ssh_user }}"
+        owner: "{{ ansible_ssh_user }}"
+      when: folder_state.stat.exists == false
+
+    - name: Check {{ store_docker_file_path }} exists
+      stat:
+        path: "{{ store_docker_file_path }} "
+      register: folder_state
+
+    - name: Create {{ store_docker_file_path }} file if it is not exists
+      become: yes
+      file:
+        path: "{{ store_docker_file_path }}"
+        state: directory
+        mode: 0755
+        group: "{{ ansible_ssh_user }}"
+        owner: "{{ ansible_ssh_user }}"
+      when: folder_state.stat.exists == false
+
+    # - name: Get Docker {{ DOCKERFILE }} file built by Jenkins from file server
+    #   get_url: 
+    #     url: http://210.63.221.19:8888/docker/backend_service/{{ DOCKERFILE }}
+    #     dest: "{{ store_docker_file_path }}"
+    #     timeout: 60
+
+    # - name: Check docker image {{ image_name }} exists
+    #   shell: docker images | grep {{ container_name }}
+    #   register: result
+
+    # - name: Remove old docker image
+    #   shell: docker rmi {{ image_name }}
+    #   when: result | bool
+
+    # - name: Load docker image from download file
+    #   shell: docker load -i {{ DOCKERFILE }}
+    #   args:
+    #     chdir: "{{ store_docker_file_path }}"
+
+    - name: Pull docker image from Docker hub
+      shell: docker pull pchuang0219/accton_tms_backend_service:jenkins
+
+    - name: Upgrade docker.py in control node
+      shell: pip install --upgrade docker-py
+
+    - name: Get information on container
+      docker_container_info:
+        name: "{{ container_name }}"
+      register: result
+
+    - debug: var=result
+
+    - name: Stop previous service when docker container running
+      shell: docker stop {{ container_name }}
+      when: 
+        - result.exists == true 
+        - result.container.State.Status == "running"
+
+    - name: Remove docker container when it exists
+      shell: docker rm {{ container_name }}
+      when: result.exists == true
+
+    - name: Run backend service in docker container
+      shell: docker run -d -p 8000:8000 --name={{ container_name }} \
+              -v /var/run/docker.sock:/var/run/docker.sock \
+              -v /tmp/log:/source/report \
+              pchuang0219/accton_tms_backend_service:jenkins python3 app.py

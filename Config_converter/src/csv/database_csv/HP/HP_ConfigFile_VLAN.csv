@@ -1,0 +1,24 @@
+VLAN_ID_Max,4094,Maximum VLAN ID number
+VLAN_Num_Max,4094,Maximum VLAN numbers
+VLAN_Type_Default,Static,Default vlan type
+VLAN_Ingress_Rule_Default,Disabled,"Ingress rule. Argument: Enabled, Disabled."
+VLAN_Membership_Mode_Default,Hybrid,"Membership mode. Argument: Hybrid, Access, trunk."
+VLAN_Jumbo_Frame_Default,Disabled,"Specifies jumbo status. Argument: Enabled, Disabled."
+VLAN_Jumbo_Frame_Size_Max,10240,Maxinum jumbo frame size
+VLAN_Jumbo_Frame_Size_Min,1536,Minimum jumbo frame size
+VLAN_Jumbo_Frame_Size_Normal,1518,Normal jumbo frame size
+VLAN_Jumbo_Frame_Set_ByPort,0,"1: Set by port. 0: Don't set by port. Argument: 1, 0."
+VLAN_Maximum_VLAN_Name_Length,32,Maximum VLAN name length
+VLAN_Member_Type_In_Trunk_Mode,Tagged,"Port joins native VLAN as tagged member or untagged member When port is in trunk mode. Argument: tagged, untagged."
+VLAN_Acceptable_Frame_Type_Default,All,Acceptable Frame Type.
+MAC_VLAN_Max_Mac_Vlan_Entry,32,
+Voice_VLAN_Status_Default,Disabled,Default voice vlan status.
+Voice_VLAN_Aging_Time_Default,1440,Default voice vlan aging time in minutes. 
+Voice_VLAN_Aging_Time_Min,5,Minimum voice vlan aging time in minutes. 
+Voice_VLAN_Aging_Time_Max,43200,Maximum voice vlan aging time in minutes. 
+Voice_VLAN_Mode_Default,None,"Default voice vlan mode. Argument: Auto, Menual, None."
+Voice_VLAN_Security_Mode_Default,Disabled,"Default voice VLAN security mode. Argument: Enabled, Disabled."
+Voice_VLAN_Rule_Default,OUI,"Default voice VLAN rule. Argument: OUI, LLDP."
+Voice_VLAN_Priority_Default,6,Default voice VLAN priority. 
+Voice_VLAN_Priority_Min,0,Minimum voice VLAN priority. 
+Voice_VLAN_Priority_Max,6,Maximum voice VLAN priority. 

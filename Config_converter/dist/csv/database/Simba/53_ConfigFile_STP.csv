@@ -1,0 +1,82 @@
+Variable,Value,Description,Json Variable,Mapping Value
+STP_Global_SpanningTree_Status_Default,Enabled,"Default spanning tree state in global. Argument: Enabled, Disabled.",SYS_DFLT_STP_MODE,"""1 2"" ""Enabled Disabled"""
+STP_Port_SpanningTree_Status_Default,Enabled,"Default spanning tree state in port. Argument: Enabled, Disabled.",SYS_DFLT_XSTP_PORT_MODE,"""1 2"" ""Enabled Disabled"""
+STP_SpanningTree_Mode_Default,RSTP,"Default spanning tree mode. Argument: STP, RSTP or MSTP.",SYS_DFLT_STP_PROTOCOL_TYPE,"""1 2 3"" ""STP RSTP MSTP"""
+STP_Bridge_Priority_Default,32768,Default spanning-tree priority in global.,SYS_DFLT_XSTP_BRIDGE_PRIORITY,
+STP_Bridge_Priority_Min,0,Minimum spanning-tree priority in global.,MIN_xstInstanceCfgPriority,
+STP_Bridge_Priority_Max,61440,Maximum spanning-tree priority in global.,MAX_xstInstanceCfgPriority,
+STP_Port_Priority_Default,128,Default spanning-tree priority in port.,SYS_DFLT_XSTP_PORT_PRIORITY,
+STP_Port_Priority_Min,0,Minimum spanning-tree priority in port.,MIN_xstInstancePortPriority,
+STP_Port_Priority_Max,240,Maximum spanning-tree priority in port.,MAX_xstInstancePortPriority,
+STP_Edge_Port_Default,Auto,"Default spanning-tree edge port state. Argument: Auto, Enabled, Disabled.",SYS_DFLT_STP_PORT_ADMIN_EDGE_PORT,"""1 2 3"" ""true false auto"""
+STP_Edge_Port_Error_Range,5,The error range of the time of port entered forwarding state. Unit: second.,,
+STP_Link_Type,Auto,"Default spanning-tree link type state. Argument: Auto,  Point-to-point, Shared.",SYS_DFLT_STP_PORT_LINK_TYPE_MODE,"""0 1 2"" ""Point-to-point Shared Auto"""
+STP_Hello_Time_Default,2,Default STA hello time. Unit: seconds.,SYS_DFLT_XSTP_BRIDGE_HELLO_TIME,
+STP_Hello_Time_Min,1,Minimum STA hello time. Unit: seconds.,MIN_dot1dStpBridgeHelloTime,
+STP_Hello_Time_Max,10,Maximum STA hello time. Unit: seconds.,MAX_dot1dStpBridgeHelloTime,
+STP_Max_Age_Default,20,Default STA max age. Unit: seconds.,SYS_DFLT_XSTP_BRIDGE_MAX_AGE,
+STP_Max_Age_Min,6,Minimum STA max age. Unit: seconds.,MIN_dot1dStpBridgeMaxAge,
+STP_Max_Age_Max,40,Maximum STA max age. Unit: seconds.,MAX_dot1dStpBridgeMaxAge,
+STP_Forward_Delay_Time_Default,15,Default STA forward delay time. Unit: seconds.,SYS_DFLT_XSTP_BRIDGE_FORWARD_DELAY,
+STP_Forward_Delay_Time_Min,4,Minimum STA forward delay time. Unit: seconds.,MIN_dot1dStpBridgeForwardDelay,
+STP_Forward_Delay_Time_Max,30,Maximum STA forward delay time. Unit: seconds.,MAX_dot1dStpBridgeForwardDelay,
+STP_Path_Cost_Method_Default,Long,"Default spanning tree path cost method. Argument: Short, Long",SYS_DFLT_STP_PATH_COST_METHOD,"""1 2"" ""Short Long"""
+STP_System_Bpdu_Flooding_Behavior_Support,1,Support system bpdu flooding behavior or not. 1: support. 0: no support.,SYS_CPNT_XSTP_CONFIGURABLE_FLOODING,
+STP_System_Bpdu_Flooding_Behavior_Default,to-vlan,"( Global ) Default BPDU flooding behavior when STP is globally disabled. Argument: to-all, to-vlan.",SYS_DFLT_XSTP_FLOODING_BEHAVIOR,"""1 2"" ""to-vlan to-all"""
+STP_Port_Bpdu_Flooding_Behavior_Support,1,Support port bpdu flooding behavior or not. 1: support. 0: no support.,SYS_CPNT_XSTP_CONFIGURABLE_FLOODING,
+STP_Port_Bpdu_Flooding_Behavior_Default,Enabled,"( Port ) Default BPDU flooding when port is STP disabled. Argument: Enabled, Disabled.",SYS_DFLT_XSTP_PORT_FLOODING,"""1 2"" ""Enabled Disabled"""
+STP_Loopback_Detection_Support,1,Support loopback detection or not. 1: support. 0: no support.,SYS_CPNT_STP_LOOPBACK_DETECTION,
+STP_Loopback_Detection_Status,Enabled,"Default spanning tree loopback detection state. Argument: Enabled, Disabled.",SYS_DFLT_LOOPBACK_DETECTOIN_STATUS,"""1 2"" ""Enabled Disabled"""
+STP_Loopback_Detection_Release_Mode,Auto,"Default spanning tree release mode of loopback detection. Argument: Auto, Manual.",SYS_DFLT_LOOPBACK_DETECTOIN_MODE,"""1 2"" ""Auto Manual"""
+STP_Loopback_Detection_Trap,Disabled,"Default the loopback detection trap state. Argument: Enabled, Disabled.",SYS_DFLT_LOOPBACK_DETECTOIN_TRAP,"""1 2"" ""Enabled Disabled"""
+STP_Loopback_Detection_Action,Block,"Default the loopback detection action state.. Argument: Block, Shutdown.",SYS_DFLT_LOOPBACK_DETECTOIN_ACTION,"""1 2"" ""Block shutdown"""
+STP_Loopback_Detection_Action_Block_Support,1,"Support loopback detection action ""block"" or not. 1: support. 0: no support.",,
+STP_Path_Cost_Default,0,Default Path cost in port.,X,
+STP_Root_Guard_Status_Default,Disabled,"Default spanning-tree root-guard state. Argument: Enabled, Disabled.",SYS_DFLT_PORT_ROOT_GUARD_STATUS,"""1 2"" ""Enabled Disabled"""
+STP_BPDU_Guard_Status_Default,Disabled,"Default BPDU guard state. Argument: Enabled, Disabled.",SYS_DFLT_PORT_BPDU_GUARD_STATUS,"""1 2"" ""Enabled Disabled"""
+STP_BPDU_Guard_Auto_Recovery,Disabled,"Default BPDU guard auto recovery state. Argument: Enabled, Disabled.",SYS_DFLT_PORT_BPDU_GUARD_AUTO_RECOVER,"""1 2"" ""Enabled Disabled"""
+STP_BPDU_Guard_Auto_Recovery_Interval,300,Default interval for BPDU guard auto recovery.,SYS_DFLT_PORT_BPDU_GUARD_AUTO_RECOVERY_INTERVAL,
+STP_BPDU_Guard_Auto_Recovery_Interval_Min,30,Minimum interval for BPDU guard auto recovery.,MIN_staPortBpduGuardAutoRecoveryInterval,
+STP_BPDU_Guard_Auto_Recovery_Interval_Max,86400,Maximum interval for BPDU guard auto recovery.,MAX_staPortBpduGuardAutoRecoveryInterval,
+STP_BPDU_Filter_Status,Disabled,"Default bpdu filtering state. Argument: Enabled, Disabled.",SYS_DFLT_PORT_BPDU_FILTER_STATUS,"""1 2"" ""Enabled Disabled"""
+STP_Support_Loop_Protection,0,"Support Loop Protection function or not. Argument: 1 (support), 0 (no support)",,
+STP_Loop_Protection_Status_Default,Disabled,"Default loop protection state. Argument: Enabled, Disabled.",,
+STP_TC_Protection_Status_Default,Enabled,"Default TC protection state. Argument: Enabled, Disabled.",,
+STP_TC_Protection_Threshold_Default,6,Default value of STA TC protection threshold.,,
+STP_TC_Protection_Threshold_Min,1,Minimum value of STA TC protection threshold.,,
+STP_TC_Protection_Threshold_Max,255,Maximum value of STA TC protection threshold.,,
+STP_Max_Hops_Default,20,,SYS_DFLT_STP_BRIDGE_MAX_HOP,
+STP_Max_Hops_Min,1,,MIN_mstMaxHops,
+STP_Max_Hops_Max,40,,MAX_mstMaxHops,
+STP_Transmission_Limit_Default,3,Default Value of spanning-tree transmission limit in seconds,SYS_DFLT_STP_BRIDGE_TX_HOLD_COUNT,
+STP_Transmission_Limit_Min,1,Minimum Value of spanning-tree transmission limit in seconds,MIN_staTxHoldCount,
+STP_Transmission_Limit_Max,10,Maximum Value of spanning-tree transmission limit in seconds,MAX_staTxHoldCount,
+MSTP_Mst_Instance_Max,16,,SYS_ADPT_MAX_NBR_OF_MST_INSTANCE,
+MSTP_PathCost_Support_Legacy,False,,,
+STP_40GF_Long_Path_Cost_Default,250,Operation path cost in Long path cost method and 40G full duplex mode.,SYS_DFLT_XSTP_FDPLX_40G_PORT_LONG_PATH_COST,
+STP_10GF_Long_Path_Cost_Default,1000,Operation path cost in Long path cost method and 10G full duplex mode.,SYS_DFLT_XSTP_FDPLX_10G_PORT_LONG_PATH_COST,
+STP_1GF_Long_Path_Cost_Default,10000,Operation path cost in Long path cost method and 1G full duplex mode.,SYS_DFLT_XSTP_FDPLX_1G_PORT_LONG_PATH_COST,
+STP_100MF_Long_Path_Cost_Default,100000,Operation path cost in Long path cost method and 100M full duplex mode.,SYS_DFLT_XSTP_FDPLX_100M_PORT_LONG_PATH_COST,
+STP_10MF_Long_Path_Cost_Default,1000000,Operation path cost in Long path cost method and 10M full duplex mode.,SYS_DFLT_XSTP_FDPLX_10M_PORT_LONG_PATH_COST,
+STP_10GH_Long_Path_Cost_Default,2000,Operation path cost in Long path cost method and 10G half duplex mode.,SYS_DFLT_XSTP_HDPLX_10G_PORT_LONG_PATH_COST,
+STP_1GH_Long_Path_Cost_Default,20000,Operation path cost in Long path cost method and 1G half duplex mode.,SYS_DFLT_XSTP_HDPLX_1G_PORT_LONG_PATH_COST,
+STP_100MH_Long_Path_Cost_Default,200000,Operation path cost in Long path cost method and 100M half duplex mode.,SYS_DFLT_XSTP_HDPLX_100M_PORT_LONG_PATH_COST,
+STP_10MH_Long_Path_Cost_Default,2000000,Operation path cost in Long path cost method and 10M half duplex mode.,SYS_DFLT_XSTP_HDPLX_10M_PORT_LONG_PATH_COST,
+STP_40GF_Short_Path_Cost_Default,250,Operation path cost in Short path cost method and 40G full duplex mode.,SYS_DFLT_XSTP_FDPLX_40G_PORT_PATH_COST,
+STP_10GF_Short_Path_Cost_Default,1000,Operation path cost in Short path cost method and 10G full duplex mode.,SYS_DFLT_XSTP_FDPLX_10G_PORT_PATH_COST,
+STP_1GF_Short_Path_Cost_Default,10000,Operation path cost in Short path cost method and 1G full duplex mode.,SYS_DFLT_XSTP_FDPLX_1G_PORT_PATH_COST,
+STP_100MF_Short_Path_Cost_Default,65535,Operation path cost in Short path cost method and 100M full duplex mode.,SYS_DFLT_XSTP_FDPLX_100M_PORT_SHORT_PATH_COST,
+STP_10MF_Short_Path_Cost_Default,65535,Operation path cost in Short path cost method and 10M full duplex mode.,SYS_DFLT_XSTP_FDPLX_10M_PORT_SHORT_PATH_COST,
+STP_10GH_Short_Path_Cost_Default,2000,Operation path cost in Short path cost method and 10G half duplex mode.,SYS_DFLT_XSTP_HDPLX_10G_PORT_PATH_COST,
+STP_1GH_Short_Path_Cost_Default,20000,Operation path cost in Short path cost method and 1G half duplex mode.,SYS_DFLT_XSTP_HDPLX_1G_PORT_PATH_COST,
+STP_100MH_Short_Path_Cost_Default,65535,Operation path cost in Short path cost method and 100M half duplex mode.,SYS_DFLT_XSTP_HDPLX_100M_PORT_SHORT_PATH_COST,
+STP_10MH_Short_Path_Cost_Default,65535,Operation path cost in Short path cost method and 10M half duplex mode.,SYS_DFLT_XSTP_HDPLX_10M_PORT_SHORT_PATH_COST,
+STP_40GF_Legacy_Path_Cost_Default,none,Operation path cost in Legacy path cost method and 40G full duplex mode.,,
+STP_10GF_Legacy_Path_Cost_Default,none,Operation path cost in Legacy path cost method and 10G full duplex mode.,,
+STP_1GF_Legacy_Path_Cost_Default,none,Operation path cost in Legacy path cost method and 1G full duplex mode.,,
+STP_100MF_Legacy_Path_Cost_Default,none,Operation path cost in Legacy path cost method and 100M full duplex mode.,,
+STP_10MF_Legacy_Path_Cost_Default,none,Operation path cost in Legacy path cost method and 10M full duplex mode.,,
+STP_10GH_Legacy_Path_Cost_Default,none,Operation path cost in Legacy path cost method and 10G half duplex mode.,,
+STP_1GH_Legacy_Path_Cost_Default,none,Operation path cost in Legacy path cost method and 1G half duplex mode.,,
+STP_100MH_Legacy_Path_Cost_Default,none,Operation path cost in Legacy path cost method and 100M half duplex mode.,,
+STP_10MH_Legacy_Path_Cost_Default,none,Operation path cost in Legacy path cost method and 10M half duplex mode.,,

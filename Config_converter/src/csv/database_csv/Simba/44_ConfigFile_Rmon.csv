@@ -1,0 +1,14 @@
+Variable,Value,Description,Json Variable,Mapping Value
+Rmon_Alarm_Default_Exist,Enabled,Alarm default exist / Inexist,SYS_CPNT_RMON_ALARM_DEFAULT,"""true false"" ""Enabled Disabled"""
+Rmon_Alarm_Default_Falling,446400,Falling threshold,,
+Rmon_Alarm_Default_Interval,30,Sencond of Interval,,
+Rmon_Alarm_Default_OID,1.3.6.1.2.1.16.1.1.1.6.,OID header,,
+Rmon_Alarm_Default_OwnerString,Test,Default string of owner,,
+Rmon_Alarm_Default_Rising,892800,Rising threshold,,
+Rmon_Alarm_Default_Taking,delta,Alarm sample type,,
+Rmon_Even_Default_Granted,8,Default even granted,SYS_ADPT_MAX_NBR_OF_RMON_HISTORY_LOG_ENTRY,
+Rmon_Even_Default_Monitor_Time,30,Default even monitor time,SYS_DFLT_RMON_HISTORY_INTERVAL_1,
+Rmon_Even_Default_Requested,50,Default even requested,SYS_DFLT_RMON_HISTORY_BUCKETS_REQUESTED,
+Rmon_Singular_Default_Granted,8,Default singular granted,SYS_ADPT_MAX_NBR_OF_RMON_HISTORY_LOG_ENTRY,
+Rmon_Singular_Default_Monitor_Time,1800,Default singular monitor time,SYS_DFLT_RMON_HISTORY_INTERVAL_2,
+Rmon_Singular_Default_Requested,50,Default singular requested,SYS_DFLT_RMON_HISTORY_BUCKETS_REQUESTED,

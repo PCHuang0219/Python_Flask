@@ -1,0 +1,10 @@
+Variable,Value,Description,Json Variable,Mapping Value
+RD_PFC_Protocol_MAC,0x01 0x80 0xC2 0x00 0x00 0x01,,,
+RD_PFC_Priority_1,7,,,
+RD_PFC_Priority_2,1,,,
+RD_PFC_Priority_3,4,,,
+RD_PFC_Priority_4,3,,,
+RD_PFC_PDU_Format,136 8 1 1,,,
+RD_PFC_PDU_Priority_Format,255 255,,,
+RD_PFC_Channel_Id,1,,,
+SYS_DFLT_PFC_PORT_MODE,DISABLE,,,

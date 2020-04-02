@@ -1,0 +1,17 @@
+Variable,Value,Description,Json Variable,Mapping Value
+SNTP_Default_Poll_Interval,16,Seconds of SNTP defaultpoll interval,SYS_ADPT_SNTP_MIN_POLLING_INTERVAL,
+SNTP_Max_Poll_Interval,16384,Seconds of SNTP max poll interval,,
+SNTP_Min_Poll_Interval,16,Seconds of SNTP min poll interval,,
+SNTP_Client_Default_Status,Disabled,SNTP client Enabled / Disabled,,
+SNTP_Server_Default_Status,Disabled,SNTP server Enabled / Disabled,,
+SNTP_Server_Num_Max,3,,MAX_sntpServerIndex,
+SNTP_Server_IP_1,192.168.1.201,IP of SNTP server_1,,
+SNTP_Server_IP_2,192.168.1.202,IP of SNTP server_2,,
+SNTP_Server_IP_3,192.168.1.203,IP of SNTP server_3,,
+SNTP_Server_IP_4,192.168.1.204,IP of SNTP server_4,,
+SNTP_Server_Inexistent_IP,192.168.3.201,SNTP_Server_Inexistent_IP,,
+Time_Range_Start_Year,2013,Start year of absolute time range. Argument: 2013-2037.,,
+Time_Range_End_Year,2037,End year of absolute time range. Argument: 2013-2037.,,
+Time_Range_Entry_Max_Per_System,50,maximum member of time-ranges per system,,
+Time_Range_Reflash_Time,50,"Time-Range CSC shall periodically update the status of each time-range every N seconds. (N is defined in TIME_RANGE_TYPE_TIMER_INTERVAL_SEC). Default is 50 seconds.
+Notes: auto will wait 2 x Time_Range_Reflash_Time seconds to wait DUT update status in scripts.",,

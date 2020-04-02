@@ -1,0 +1,21 @@
+Variable,Value,Description,Json Variable,Mapping Value
+arpErrorRange,0,,,
+ARP_Aging_Time_Default,1200,Default ARP cache timeout. Unit: second.,,
+ARP_Aging_Time_Min,300,Minimum ARP cache timeout. Unit: second.,SYS_ADPT_MIN_ARP_CACHE_TIMEOUT,
+ARP_Aging_Time_Max,86400,Maximum ARP cache timeout. Unit: second.,SYS_ADPT_MAX_ARP_CACHE_TIMEOUT,
+DAI_Global_Status_Default,disabled,Default global DAI state. Argument: Enabled or Disabled.,SYS_DFLT_DAI_GLOBAL_STATUS,"""1 2"" ""Enabled Disabled"""
+DAI_VLAN_Status_Default,disabled,Default vlan DAI state. Argument: Enabled or Disabled.,SYS_DFLT_DAI_VLAN_STATUS,"""1 2"" ""Enabled Disabled"""
+DAI_Port_Trust_Status_Default,Untrusted,Default trust mode of port. Argument: Trusted or Untrusted.,SYS_DFLT_DAI_PORT_TRUST_STATUS,"""1 2"" ""Trusted Untrusted"""
+DAI_Port_Rate_Limit_Default,15,Default rate limit threshold per second for processing ARP messages.,SYS_DFLT_DAI_PORT_RATE_LIMIT,
+DAI_Port_Rate_Limit_Min,0,Minimum rate limit threshold per second for processing ARP messages.,SYS_ADPT_DAI_MIN_PORT_RATE_LIMIT,
+DAI_Port_Rate_Limit_Max,2048,Maximum rate limit threshold per second for processing ARP messages.,SYS_ADPT_DAI_MAX_PORT_RATE_LIMIT,
+DAI_Log_Message_Interval_Default,1,Default value of Time interval in seconds.,SYS_DFLT_DAI_LOG_MSG_INTERVAL,
+DAI_Log_Message_Interval_Min,0,Minimum value of Time interval in seconds.,SYS_ADPT_DAI_LOG_MSG_MIN_INTERVAL,
+DAI_Log_Message_Interval_Max,86400,Maximum value of Time interval in seconds.,SYS_ADPT_DAI_LOG_MSG_MAX_INTERVAL,
+DAI_Log_Message_Number_Default,5,Default Message number.,SYS_DFLT_DAI_LOG_MSG_NBR_PER_INTERVAL,
+DAI_Log_Message_Number_Min,0,Minimum message number. 0 means not generating system messages.,SYS_ADPT_DAI_MIN_NBR_OF_LOG_MSG_PER_INTERVAL,
+DAI_Log_Message_Number_Max,256,Maximum message number.,SYS_ADPT_DAI_MAX_NBR_OF_LOG_MSG_PER_INTERVAL,
+DAI_Auto_Recovery_Status_Default,Disabled ,Default DAI auto recovery state. Argument: Enabled or Disabled.,,
+DAI_Auto_Recovery_Interval_Default,300,Default DAI auto recovery interval.,,
+DAI_Remote_Logging_Host_Display_Format,1,"The display format of Remote logging host. Argument: 1(Server IP Address : 192.168.1.1, Port : 514), 2( Remote Log Server IP Address : 192.168.1.1.514).",,
+DAI_Error_Range,5,unit: %,,

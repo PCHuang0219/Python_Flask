@@ -1,0 +1,11 @@
+Variable,Value,Description,Json Variable,Mapping Value
+L2SW_AutoNego_Per_Port_Support,1,Support autonegotiation per port.,SYS_CPNT_NEGOTIATION,
+L2SW_AutoNego_Per_Port_Default,Enabled,,SYS_DFLT_PORT_AUTONEGOTIATION,"""1 2"" ""Enabled Disabled"""
+L2SW_Jumbo_Frame_Support,1,,SYS_CPNT_JUMBO_FRAMES,
+L2SW_Jumbo_Frame_Default,Disabled,,SYS_DFLT_JUMBO_FRAME_STATUS,"""1 2"" ""Enabled Disabled"""
+L2SW_Jumbo_Frame_Per_Port_Support,0,,SYS_CPNT_SWCTRL_MTU_CONFIG_MODE,"""1 2 3"" ""0 1 0"""
+L2SW_FlowControl_Per_Port_Support,1,,SYS_CPNT_FLOW_CONTROL,
+L2SW_FlowControl_Per_Port_Default,Disabled,,SYS_DFLT_PORT_FLOW_CONTROL,"""1 2"" ""Enabled Disabled"""
+L2SW_LinkDown_Reason_Support,1,"Port status information support ""Link Down Reason"" or not?
+          Console#show int status e 1/1
+            Link Down Reason       : Port Admin",,

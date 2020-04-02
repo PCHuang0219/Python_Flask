@@ -1,0 +1,11 @@
+Variable,Value,Description,Json Variable,Mapping Value
+Terminal_History_Size_Default,10,,,
+Terminal_History_Size_MAX,256,,,
+Terminal_Length_Default,24,,,
+Terminal_Length_MAX,200,,,
+Terminal_Length_MIN,24,,,
+Terminal_Type_Default,VT100,,,
+Terminal_Width_Default,80,,,
+Terminal_Width_MAX,300,,,
+Terminal_Width_MIN,80,,,
+Terminal_EscapeChar_Default,27,,,

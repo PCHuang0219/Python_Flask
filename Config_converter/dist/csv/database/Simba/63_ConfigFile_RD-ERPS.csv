@@ -1,0 +1,5 @@
+Variable,Value,Description,Json Variable,Mapping Value
+PC1_Id,2,NIC id in wireshark.,,
+PC2_Id,6,NIC id in wireshark.,,
+PC3_Id,7,NIC id in wireshark.,,
+PC4_Id,4,NIC id in wireshark.,,

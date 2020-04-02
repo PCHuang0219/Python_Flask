@@ -1,0 +1,64 @@
+Variable,Value,Description,Json Variable,Mapping Value
+ATC_Broadcast_Action,RateControl,Broadcast Action : Shutdown / RateControl,SYS_DFLT_ATC_BSTORM_STORM_ACTION,"""1 2"" ""RateControl Shutdown"""
+ATC_Broadcast_Apply_Timer_Default,300,Apply time (sec),SYS_DFLT_ATC_BSTORM_TC_ON_TIMER,
+ATC_Broadcast_Apply_Timer_Max,300,Apply time (sec),SYS_ADPT_ATC_BSTORM_MAX_TC_ON_TIMER,
+ATC_Broadcast_Apply_Timer_Min,5,Apply time (sec),SYS_ADPT_ATC_BSTORM_MIN_TC_ON_TIMER,
+ATC_Broadcast_Auto_Release_Control,Disabled,ATC broadcast auto release control ,SYS_DFLT_ATC_BSTORM_ATC_RELEASE,"""1 2"" ""Enabled Disabled"""
+ATC_Broadcast_Clear_Threshold_Default,128,Broadcast default threshold for ATC-Clear,SYS_DFLT_ATC_BSTORM_STORM_CLEAR_THRESHOLD,
+ATC_Broadcast_Clear_Threshold_Max,255,Maximum value can be inserted as ATC threshold,SYS_ADPT_ATC_BSTORM_MAX_RATE_LIMIT,
+ATC_Broadcast_Clear_Threshold_Min,1,Minimum value can be inserted as ATC threshold,SYS_ADPT_ATC_BSTORM_MIN_RATE_LIMIT,
+ATC_Broadcast_Fire_Threshold_Default,128,Broadcast default threshold for ATC-Fire,SYS_DFLT_ATC_BSTORM_STORM_ALARM_THRESHOLD,
+ATC_Broadcast_Fire_Threshold_Max,255,Maximum value can be inserted as ATC threshold,SYS_ADPT_ATC_BSTORM_MAX_RATE_LIMIT,
+ATC_Broadcast_Fire_Threshold_Min,1,Minimum value can be inserted as ATC threshold,SYS_ADPT_ATC_BSTORM_MIN_RATE_LIMIT,
+ATC_Broadcast_Release_Timer_Default,900,Release time (sec),SYS_DFLT_ATC_BSTORM_TC_RELEASE_TIMER,
+ATC_Broadcast_Release_Timer_Max,900,Release time (sec),SYS_ADPT_ATC_BSTORM_MAX_TC_RELEASE_TIMER,
+ATC_Broadcast_Release_Timer_Min,5,Release time (sec),SYS_ADPT_ATC_BSTORM_MIN_TC_RELEASE_TIMER,
+ATC_Broadcast_Status_Default,Disabled,ATC broadcast status,SYS_DFLT_ATC_BSTORM_STATUS,"""1 2"" ""Enabled Disabled"""
+ATC_Broadcast_Trap_Storm_Clear,Disabled,ATC broadcast trap storm clear,SYS_DFLT_ATC_BSTORM_STORM_TRAP_STORM_CLEAR,"""1 2"" ""Enabled Disabled"""
+ATC_Broadcast_Trap_Storm_Fire,Disabled,ATC broadcast trap storm fire,SYS_DFLT_ATC_BSTORM_STORM_TRAP_STORM_ALARM,"""1 2"" ""Enabled Disabled"""
+ATC_Broadcast_Trap_Traffic_Apply,Disabled,ATC broadcast trap traffic apply,SYS_DFLT_ATC_BSTORM_STORM_TRAP_TC_ON,"""1 2"" ""Enabled Disabled"""
+ATC_Broadcast_Trap_Traffic_Release,Disabled,ATC broadcast trap traffic release,SYS_DFLT_ATC_BSTORM_STORM_TRAP_TC_RELEASE,"""1 2"" ""Enabled Disabled"""
+ATC_DUT_End_Port,1/4,For ATC-0630 ~ 0651,,
+ATC_DUT_Start_Port,1/1,For ATC-0630 ~ 0651,,
+ATC_Error_Range,8,TG of ATC error range,,
+ATC_Error_Range_Unit,Percent,Error range unit : Percent / Packets,,
+ATC_Multicast_Action,RateControl,Multicast Action : Shutdown / RateControl,SYS_DFLT_ATC_MSTORM_STORM_ACTION,"""1 2"" ""RateControl Shutdown"""
+ATC_Multicast_Apply_Timer_Default,300,Apply time (sec),SYS_DFLT_ATC_MSTORM_TC_ON_TIMER,
+ATC_Multicast_Apply_Timer_Max,300,Apply time (sec),SYS_ADPT_ATC_MSTORM_MAX_TC_ON_TIMER,
+ATC_Multicast_Apply_Timer_Min,5,Apply time (sec),SYS_ADPT_ATC_MSTORM_MIN_TC_ON_TIMER,
+ATC_Multicast_Auto_Release_Control,Disabled,ATC multicast auto release control ,SYS_DFLT_ATC_MSTORM_ATC_RELEASE,"""1 2"" ""Enabled Disabled"""
+ATC_Multicast_Clear_Threshold_Default,128,Multicast default threshold for ATC-Clear,SYS_DFLT_ATC_MSTORM_STORM_CLEAR_THRESHOLD,
+ATC_Multicast_Clear_Threshold_Max,255,Maximum value can be inserted as ATC threshold,SYS_ADPT_ATC_BSTORM_MAX_RATE_LIMIT,
+ATC_Multicast_Clear_Threshold_Min,1,Minimum value can be inserted as ATC threshold,SYS_ADPT_ATC_BSTORM_MIN_RATE_LIMIT,
+ATC_Multicast_Fire_Threshold_Default,128,Multicast default threshold for ATC-Fire,SYS_DFLT_ATC_MSTORM_STORM_ALARM_THRESHOLD,
+ATC_Multicast_Fire_Threshold_Max,255,Maximum value can be inserted as ATC threshold,SYS_ADPT_ATC_MSTORM_MAX_RATE_LIMIT,
+ATC_Multicast_Fire_Threshold_Min,1,Minimum value can be inserted as ATC threshold,SYS_ADPT_ATC_MSTORM_MIN_RATE_LIMIT,
+ATC_Multicast_Release_Timer_Default,900,Release time (sec),SYS_DFLT_ATC_MSTORM_TC_RELEASE_TIMER,
+ATC_Multicast_Release_Timer_Max,900,Release time (sec),SYS_ADPT_ATC_MSTORM_MAX_TC_RELEASE_TIMER,
+ATC_Multicast_Release_Timer_Min,5,Release time (sec),SYS_ADPT_ATC_MSTORM_MIN_TC_RELEASE_TIMER,
+ATC_Multicast_Status_Default,Disabled,The status od ATC multicast : Disabled / Enabled,SYS_DFLT_ATC_MSTORM_STATUS,"""1 2"" ""Enabled Disabled"""
+ATC_Multicast_Trap_Storm_Clear,Disabled,The multicast trap storm clear : Disabled / Enabled,SYS_DFLT_ATC_MSTORM_STORM_TRAP_STORM_CLEAR,"""1 2"" ""Enabled Disabled"""
+ATC_Multicast_Trap_Storm_Fire,Disabled,The multicast trap storm fire : Disabled / Enabled,SYS_DFLT_ATC_MSTORM_STORM_TRAP_STORM_ALARM,"""1 2"" ""Enabled Disabled"""
+ATC_Multicast_Trap_Traffic_Apply,Disabled,The multicast trap traffic apply : Disabled / Enabled,SYS_DFLT_ATC_MSTORM_STORM_TRAP_TC_ON,"""1 2"" ""Enabled Disabled"""
+ATC_Multicast_Trap_Traffic_Release,Disabled,The multicast trap traffic release : Disabled / Enabled,SYS_DFLT_ATC_MSTORM_STORM_TRAP_TC_RELEASE,"""1 2"" ""Enabled Disabled"""
+ATC_PPS_Unit,1000,Packet per second for 1 unit,SYS_ADPT_ATC_STORM_CONTROL_UNIT,
+ATC_TG_End_Port,4,For ATC-0630 ~ 0651,,
+ATC_Unknown_Unicast_Action,RateControl,Unknown Unicast Action : Shutdown / RateControl,,
+ATC_Unknown_Unicast_Apply_Timer_Default,300,Apply time (sec),,
+ATC_Unknown_Unicast_Apply_Timer_Max,300,Apply time (sec),,
+ATC_Unknown_Unicast_Apply_Timer_Min,5,Apply time (sec),,
+ATC_Unknown_Unicast_Clear_Threshold_Default,128,Unicast default threshold for ATC-Clear,,
+ATC_Unknown_Unicast_Clear_Threshold_Max,255,Maximum value can be inserted as ATC threshold,,
+ATC_Unknown_Unicast_Clear_Threshold_Min,1,Minimum value can be inserted as ATC threshold,,
+ATC_Unknown_Unicast_Fire_Threshold_Default,128,Unicast default threshold for ATC-Fire,,
+ATC_Unknown_Unicast_Fire_Threshold_Max,255,Maximum value can be inserted as ATC threshold,,
+ATC_Unknown_Unicast_Fire_Threshold_Min,1,Minimum value can be inserted as ATC threshold,,
+ATC_Unknown_Unicast_Release_Timer_Default,900,Release time (sec),,
+ATC_Unknown_Unicast_Release_Timer_Max,900,Release time (sec),,
+ATC_Unknown_Unicast_Release_Timer_Min,5,Release time (sec),,
+ATC_Unknown_Unicast_Status_Default,Disabled,The status od ATC unicast : Disabled/Enabled,,"""1 2"" ""Enabled Disabled"""
+ATC_Unknown_Unicast_Support,False,True / False ,,
+ATC_Unknown_Unicast_Trap_Storm_Clear,Disabled,The multicast trap storm clear : Disabled / Enabled,,
+ATC_Unknown_Unicast_Trap_Storm_Fire,Disabled,The multicast trap storm fire : Disabled / Enabled,,
+ATC_Unknown_Unicast_Trap_Traffic_Apply,Disabled,The multicast trap traffic apply : Disabled / Enabled,,
+ATC_Unknown_Unicast_Trap_Traffic_Release,Disabled,The multicast trap traffic release : Disabled / Enabled,,

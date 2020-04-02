@@ -1,0 +1,10 @@
+Variable,Value,Description,Json Variable,Mapping Value
+BcastStorm_Default_Rate,64,BcastStorm default rate,SYS_DFLT_BSTORM_RATE_LIMIT,
+BcastStorm_Default_Status,Enabled,BcastStorm default status : Enabled / Disabled,SYS_DFLT_BCAST_STORM_STATUS,"""1 2"" ""Enabled Disabled"""
+BcastStorm_Error_Range,3,Error range ,,
+BcastStorm_Error_Range_Unit,Percent,Error range unit : Percent / Packets,,
+BcastStorm_Group,1,BcastStrom group,,
+BcastStorm_Max,1000000,BcastStorm maximum rate,SYS_ADPT_MAX_BSTORM_RATE_LIMIT,
+BcastStorm_Min,64,BcastStorm minimum rate,SYS_ADPT_MIN_BSTORM_RATE_LIMIT,
+BcastStorm_Send_Packets_Wating_Time,8000,Milliseconds,,
+BcastStorm_Unit,bps,BcastStorm unit: bps / packets,,

@@ -1,0 +1,12 @@
+import sys
+sys.path.append("..")
+from lib import settings
+settings.init()
+from lib.utils import printException
+import subprocess
+
+# Generate lib/settings.py Class DUT
+p = subprocess.call(['python3','Config/getAllConfig.py'],stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+
+# Print the terminal output to stdout as well as writing to log file.
+settings.glb.setVerbosity('high')

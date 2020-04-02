@@ -1,0 +1,2 @@
+Variable,Value,Description,Json Variable,Mapping Value
+HostRoute_Max_Host_Count,1024,HostRoute max host count,SYS_ADPT_MAX_NBR_OF_HOST_ROUTE,

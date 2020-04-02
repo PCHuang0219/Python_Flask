@@ -1,0 +1,113 @@
+Test ID,Component,Type
+11,The R/W test for memory device(RAM),Stress
+14,The simple R/W test for memory device(RAM),Stress
+52,The R/W test for storage disk,Stress
+53,The R/W test for external storage disk,Stress
+56,The stressapptest test for storage disk,Stress
+57,The performance test for storage disk,Stress
+58,The R/W test for NVMe storage disk,Stress
+59,The performance test for NVMe storage disk,Stress
+60,The stressapptest,Stress
+61,The mprime test,Stress
+62,The performance test for memory,Stress
+63,The stress-ng performance test for CPU,Stress
+999,The unitest for diag test cases(MFG mode),Stress
+1,Check EEPROM of cpu management port,Normal
+2,Read MAC address from cpu management port,Normal
+4,The probe test cp2112 for usb-to-i2c bus,Normal
+5,The R/W test for RTC timer,Normal
+6,The R/W and keepalive test for Watchdog timer,Normal
+7,The ICMP ECHO test for CPU management interface,Normal
+8,Monitor CPUs temperature,Normal
+9,TPM test for COM-E,Normal
+11,The R/W test for memory device(RAM),Normal
+13,The Physical test for memory device(RAM),Normal
+31,Get HW information from SMB FRU EEPROM(CP2112),Normal
+32,Set HW information into SMB FRU EEPROM(CP2112),Normal
+33,Get HW information from PIM FRU EEPROM(CP2112),Normal
+34,Set HW information into PIM FRU EEPROM(CP2112),Normal
+35,Get transceiver information from transceiver EEPROM,Normal
+36,The simple stress test for CP2112 I2C Bus,Normal
+52,The R/W test for storage disk,Normal
+53,The R/W test for external storage disk,Normal
+54,Show COM-E HW information,Normal
+56,Show Tomahawk 3 PCIe SPI flash version,Normal
+58,The R/W test for NVMe storage disk,Normal
+63,The stress-ng performance test for CPU,Normal
+70,The R/W test of devices for BMC management,Normal
+71,The information check for BMC management,Normal
+72,The Fan speed test,Normal
+75,Get HW information from FRU EEPROM(BMC),Normal
+76,Set HW information into FRU EEPROM(BMC),Normal
+77,MFG mode The sensor test for BMC management,Normal
+78,The information check for MAC address from COM-E and BMC,Normal
+79,Mode check for BCM5396,Normal
+80,Power Button test,Normal
+82,Test system LED,Normal
+83,Set post LED(0x00 - 0xFF),Normal
+86,Set FAN LED(OFF->RED->BLUE->AUTO),Normal
+88,Console Selection Button test,Normal
+89,Reset Button test,Normal
+90,Show Board Revision ID,Normal
+92,The ICMP ECHO test for BMC MAC2 interface,Normal
+94,The ICMP ECHO test for BMC USB0 interface,Normal
+97,The RTC test for BMC,Normal
+98,The watchdog test for BMC,Normal
+99,Send RST signal to CP2112,Normal
+104," Show QSFP EEPROM through CP2112",Normal
+105,Test QSFP Reset,Normal
+106,Verify EEPROM contents of 16 ports GE switch,Normal
+107,MFG mode The simple test for show QSFP EEPROM through CP2112,Normal
+108,Detecting machine check exceptions,Normal
+113," Get HW information from PSU EEPROM",Normal
+115,Show Revision of CPLD and FPGA,Normal
+118,TPM test for BMC,Normal
+119,Verify contents for external bios,Normal
+120,Verify contents for iob fpga flash,Normal
+121,MFG mode Verify contents for PIM's dom fpga flash,Normal
+122,Verify contents for Tomahawk flash,Normal
+123,MFG mode Verify contents for PIM's PHY eeproms,Normal
+124,Set management port LED(OFF->ON->RECOVER),Normal
+125,Show power management controller of Tomahawk,Normal
+126,MFG mode Show hot swap controller status of PIM,Normal
+128,MFG mode Check all of the voltage from sensors,Normal
+129,Test bcm5396 to PIM board by SGMII loopback,Normal
+130,The detection and r/w test for eMMC flash,Normal
+131,Test oob combo management port SFP loopback,Normal
+132,Dump all CPLD and FPGA registers,Normal
+134,The R/W test for BMC memory device(RAM) of BMC,Normal
+135,Show CPLD usercode,Normal
+136,Detect repeater and repeater eeprom,Normal
+137,Accton debug card circuit test(LCD/Button/CPLD),Normal
+139,Set/Check PIM's max34461 limit,Normal
+141,The Test of 16Q init in SPI mode linespeed test,Normal
+142,The Test of 16Q deep verification of traffic path,Normal
+150,The Test of 10G KR CPU<-->TH3,Normal
+151,The Test of 1G SGMII TH3<-->BCM5396,Normal
+152,MFG mode The Test of 16Q linespeed,Normal
+153,The Test of 4DD linespeed,Normal
+154,MFG mode Dump all serdes info,Normal
+155,MFG mode The Test of 16Q 40G linespeed,Normal
+156,MFG mode The Test for FPGA MDIO 16Q,Normal
+157,The Test of 16Q 200G linespeed,Normal
+158,MFG mode The Test for FPGA I2C Low-Speed Path QSFP EEPROM,Normal
+159,MFG mode The Test for FPGA I2C High-Speed Path,Normal
+160,An agent to call 'lspci' utility,Normal
+161,Check PCI-E status with 'lspci' utility,Normal
+162,Check FPGA PCI-E bus error,Normal
+163,Check Tomahawk3 PCI-E bus error,Normal
+168,Read TH3 core power voltage,Normal
+199,Show PSU status,Normal
+204,Reboot BMC,Normal
+205,Update BMC firmware from TFTP server(Sideband),Normal
+211," Boot to second BMC flash",Normal
+300,Set the uS card number of switch board into parameter,Normal
+304,Show all diag report,Normal
+305,Show command history,Normal
+400,"Clear all AER mask of all pci devices ",Normal
+401,Check if any AER error happened from dmesg,Normal
+403,Check if any PCIE-Error happened from messages,Normal
+500,(PT only)SMB PT test for COMe side,Normal
+501,(PT only)SMB PT test for BMC side,Normal
+510,(FT-B only)Present test for full-load chassis,Normal
+999,The unitest for diag test cases(MFG mode),Normal

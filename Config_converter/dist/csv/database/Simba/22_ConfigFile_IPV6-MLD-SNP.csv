@@ -1,0 +1,19 @@
+Variable,Value,Description,Json Variable,Mapping Value
+IPv6MLDSNP_Groups_MAX,255,Maximum dynamic groups could be learned,SYS_ADPT_MLDSNP_MAX_NBR_OF_GROUP_ENTRY,
+IPv6MLDSNP_Global_Default,disabled,enabled or disabled,SYS_DFLT_MLDSNP_STATUS,"""1 2"" ""enabled disabled"""
+IPv6MLDSNP_Querier_Default,disabled,enabled or disabled,SYS_DFLT_MLDSNP_QUERIER_STATUS,"""1 2"" ""enabled disabled"""
+IPv6MLDSNP_UNMCAST_mode_Default,router,flood or router,SYS_DFLT_MLDSNP_UNKNOWN_MULTICAST_MOD,"""1 2"" ""flood router"""
+IPv6MLDSNP_Version_Default,2,IPv6 MLD Snooping version,SYS_DFLT_MLDSNP_VERSION,
+IPv6MLDSNP_QryIntvl_Default,125,IPv6 MLD Snooping query interval,SYS_DFLT_MLSDNP_QUERY_INTERVAL,
+IPv6MLDSNP_QryIntvl_MAX,125,IPv6 MLD Snooping query interval,MAX_mldSnoopQueryInterval,
+IPv6MLDSNP_QryIntvl_MIN,60,IPv6 MLD Snooping query interval,MIN_mldSnoopQueryInterval,
+IPv6MLDSNP_Robustness_Default,2,IPv6 MLD Snooping robustness,SYS_DFLT_MLDSNP_ROBUST_VALUE,
+IPv6MLDSNP_Robustness_MAX,10,IPv6 MLD Snooping robustness,MAX_mldSnoopRobustness,
+IPv6MLDSNP_Robustness_MIN,2,IPv6 MLD Snooping robustness,MIN_mldSnoopRobustness,
+IPv6MLDSNP_QryMaxResponse_Default,10,IPv6 MLD Snooping query max response time,,
+IPv6MLDSNP_QryMaxResponse_MAX,25,IPv6 MLD Snooping query max response time,MAX_mldSnoopQueryMaxResponseTime,
+IPv6MLDSNP_QryMaxResponse_MIN,5,IPv6 MLD Snooping query max response time,MIN_mldSnoopQueryMaxResponseTime,
+IPv6MLDSNP_ImmediateLeave_Default,disabled,IPv6 MLD Snooping Immediate Leave,SYS_DFLT_MVR6_IMMEDIATE_LEAVE,"""1 2"" ""enabled disabled"""
+IPv6MLDSNP_MrouterExpryTime_Default,300,IPv6 MLD Snooping router port expiry time,,
+IPv6MLDSNP_MrouterExpryTime_MAX,500,IPv6 MLD Snooping router port expiry time,MAX_mldSnoopRouterPortExpireTime,
+IPv6MLDSNP_MrouterExpryTime_MIN,300,IPv6 MLD Snooping router port expiry time,MIN_mldSnoopRouterPortExpireTime,

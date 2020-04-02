@@ -1,0 +1,8 @@
+Variable,Value,Description,Json Variable,Mapping Value
+PING_Count_Min,1,Minimium Number of packets to send,MIN_pingProbeCount,
+PING_Count_Max,16,Maximium Number of packets to send,SYS_ADPT_MAX_PING_NUM,
+PING_Count_Default,5,Default value of ping count,,
+PING_Size_Min,32,Minimium size of packets to send,SYS_ADPT_MIN_PING_SIZE,
+PING_Size_Max,512,Maximium size of packets to send,SYS_ADPT_MAX_PING_SIZE,
+IPv4_IPAddr_Default,DHCP,Default IP address,,
+PING_Delay_After_Request,1000,ms,,

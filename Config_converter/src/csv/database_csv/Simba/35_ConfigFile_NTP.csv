@@ -1,0 +1,5 @@
+Variable,Value,Description,Json Variable,Mapping Value
+NTP_Max_AuthKey_Number,65535,Authentication key max number,,
+NTP_Max_AuthKey_Entris,255,Authentication key max enteris,,
+NTP_Default_Client_Status,Disabled,NTP client status : Enabled / Disabled,,
+NTP_Max_Server_Count,3,NTP Server Max Count,,

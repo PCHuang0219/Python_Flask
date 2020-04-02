@@ -1,0 +1,190 @@
+#!/usr/bin/python
+# -*- coding: utf8 -*-
+"""
+Module Name: auto_report.init
+Purpose: The initial data for the script used to generate word report.
+
+Description:
+    This module is the base for the script used to generate report automatic. It will be used after all test cases 
+    of the job are executed by "def generateWordReport" in Database/database.py, and it provide basic function to 
+    write test cases content to the word file.
+
+History:
+    Anber Huang 02/13/2020,created.
+
+Copyright(c) Accton Technology Corporation, 2020.
+"""
+import sys
+sys.path.append('..')
+
+import re
+import docx
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.shared import Pt
+
+doc = docx.Document(docx= '../template/SIT_report.docx')
+
+def add_hyperlink(paragraph, url, text, color, underline):
+    """
+    A function that places a hyperlink within a paragraph object.
+
+    :param paragraph: The paragraph we are adding the hyperlink to.
+    :param url: A string containing the required url
+    :param text: The text displayed for the url
+    :return: The hyperlink object
+    """
+
+    # This gets access to the document.xml.rels file and gets a new relation id value
+    part = paragraph.part
+    r_id = part.relate_to(url, docx.opc.constants.RELATIONSHIP_TYPE.HYPERLINK, is_external=True)
+
+    # Create the w:hyperlink tag and add needed values
+    hyperlink = docx.oxml.shared.OxmlElement('w:hyperlink')
+    hyperlink.set(docx.oxml.shared.qn('r:id'), r_id, )
+
+    # Create a w:r element
+    new_run = docx.oxml.shared.OxmlElement('w:r')
+
+    # Create a new w:rPr element
+    rPr = docx.oxml.shared.OxmlElement('w:rPr')
+
+    # Add color if it is given
+    if not color is None:
+      c = docx.oxml.shared.OxmlElement('w:color')
+      c.set(docx.oxml.shared.qn('w:val'), color)
+      rPr.append(c)
+
+    # Remove underlining if it is requested
+    if not underline:
+      u = docx.oxml.shared.OxmlElement('w:u')
+      u.set(docx.oxml.shared.qn('w:val'), 'none')
+      rPr.append(u)
+
+    # Join all the xml elements together add add the required text to the w:r element
+    new_run.append(rPr)
+    new_run.text = text
+    hyperlink.append(new_run)
+
+    paragraph._p.append(hyperlink)
+
+    return hyperlink
+
+def addTitle(content, font_size=18, font_bold=True):
+  p = doc.add_paragraph()
+  p_format = p.paragraph_format
+  p_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
+  p = p.add_run(content)
+  p_font = p.font
+  p_font.size = Pt(font_size)
+  p_font.bold = font_bold
+
+def addKeyValue(key, value, font_size=14):
+  p = doc.add_paragraph()
+  p_format = p.paragraph_format
+  p_format.alignment = WD_ALIGN_PARAGRAPH.DISTRIBUTE
+  if not isinstance(key, list):
+    key_format = p.add_run(key + ': ')
+    key_font = key_format.font
+    key_font.size = Pt(font_size)
+    key_font.bold = True
+
+    val_format = p.add_run(value)
+    val_font = val_format.font
+    val_font.size = Pt(12)
+    val_font.bold = False
+  else:
+    index = 0
+    for k in key :
+      key_format = p.add_run(k + ': ')
+      key_font = key_format.font
+      key_font.size = Pt(font_size)
+      key_font.bold = True
+
+      val_format = p.add_run(value[index] + '          ')
+      val_font = val_format.font
+      val_font.size = Pt(12)
+      val_font.bold = False
+      index += 1
+      
+# addTitle('Accton')
+# addTitle('System Integration Test Summary Report')
+# addKeyValue(['Project', 'Test Name'], ['Facebook', 'SIT stress testing'])
+# addKeyValue('Test Description', 'Test for 8 hours')
+# addKeyValue(['Start Time', 'End Time'], ['2020-01-09 11:21:38', '2020-01-09 20:04:47'])
+# addKeyValue('Duration', '0 days 8 hrs 43 min')
+# addKeyValue('Web Link', 'http://210.63.221.19:8000/test/jobManagement/jobDetail/?jobId=5e15a941a81e7a08121296d2')
+# addKeyValue(['Test Status', 'Test Result'], ['Finished', 'Failed'])
+
+def modifyJobInfo(project='', test_name='', test_desp='', start_t='', end_t='', during_t='', web_link='', gantt_link='', test_status='', test_result='', thread_no=''):
+  for paragraph in doc.paragraphs:
+    if "PROJECT" in paragraph.text:
+      paragraph.text = re.sub("PROJECT", project, paragraph.text)
+      paragraph.text = re.sub("TEST_NAME", test_name, paragraph.text)
+    elif "TEST_DESCRIPTION" in paragraph.text:
+      paragraph.text = re.sub("TEST_DESCRIPTION", test_desp, paragraph.text)
+    elif "START_TIME" in paragraph.text:
+      paragraph.text = re.sub("START_TIME", start_t, paragraph.text)
+      paragraph.text = re.sub("END_TIME", end_t, paragraph.text)
+    elif "DURATION" in paragraph.text:
+      paragraph.text = re.sub("DURATION", during_t, paragraph.text)
+    elif "WEB_LINK" in paragraph.text:
+      paragraph.text = re.sub("WEB_LINK", '\n', paragraph.text)
+      paragraph.paragraph_format.left_indent = Pt(15)
+      add_hyperlink(paragraph, web_link, web_link, None, True)
+      paragraph.paragraph_format.left_indent = Pt(0)
+    elif "TEST_STATUS" in paragraph.text:
+      paragraph.text = re.sub("TEST_STATUS", test_status, paragraph.text)
+    elif "TEST_RESULT" in paragraph.text:
+      paragraph.text = re.sub("TEST_RESULT", test_result, paragraph.text)
+    elif "NoCT" in paragraph.text:
+      paragraph.text = re.sub("NoCT", str(thread_no), paragraph.text)
+    elif "WORKFLOW" in paragraph.text:
+      paragraph.text = re.sub("WORKFLOW", '\n', paragraph.text)
+      paragraph.paragraph_format.left_indent = Pt(15)
+      add_hyperlink(paragraph, gantt_link, gantt_link, None, True)
+      paragraph.paragraph_format.left_indent = Pt(0)
+
+def addStageTitle(stage_id):
+  p = doc.add_paragraph()
+  p_format = p.paragraph_format
+  p_format.left_indent = Pt(0)
+  font_format = p.add_run('\nStage ID [' + str(stage_id) + '] :')
+  font_format.bold = True
+
+def addThreadTitle(thread_id, start_time, end_time):
+  p = doc.add_paragraph()
+  p_format = p.paragraph_format
+  p_format.left_indent = Pt(15)
+  font_format = p.add_run('Thread ID [' + str(thread_id) + '] :')
+  font_format.bold = True
+  p_format = p.paragraph_format
+  p_format.left_indent = Pt(20)
+  p.add_run('\nThread Start Time : ' + str(start_time))
+  p.add_run('\nThread End Time : ' + str(end_time))
+
+def addTestCaseInfo(job_id ,test_id, test_case_id, test_name, test_case, test_status, total, times_of_pass, average_time, index):
+  p = doc.add_paragraph()
+  p_format = p.paragraph_format
+  p_format.left_indent = Pt(30)
+  p.add_run('Test Case ID [ ' + str(index) + '] :')
+  p = doc.add_paragraph()
+  p_format = p.paragraph_format
+  p_format.left_indent = Pt(45)
+  p.add_run('Test Case Name : ' + test_name + ' - ' + test_case + '\n')
+  p.add_run('Test Case : ' + test_case_id + '\n')
+  p.add_run('Test Status : ' + test_status + '\n')
+  p.add_run('Number of Test Times : ' + str(total) + '\n')
+  p.add_run('Number of PASS Times : ' + str(times_of_pass) + '\n')
+  p.add_run('Number of FAIL Times : ' + str(int(total)- int(times_of_pass)) + '\n')
+  p.add_run('Average Execution Time : ' + average_time + '\n')
+  url = 'http://210.63.221.19:8000/test/jobManagement/jobDetail/jobLog/?testId=' + str(test_id) + '&jobId=' + job_id
+  p.add_run('Log Link : \n')
+  p_format.left_indent = Pt(45)
+  add_hyperlink(p, url, url, None, True)
+  p_format.left_indent = Pt(45)
+
+def addPicture(path):
+  p = doc.add_paragraph()
+  p.add_run('\n\n')
+  r = p.add_run()
+  r.add_picture(path)

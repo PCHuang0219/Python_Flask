@@ -1,0 +1,5 @@
+Variable,Value,Description,Json Variable,Mapping Value
+RD_MLAG_TYPE_MIN_DOMAIN_ID_LEN  ,1,,,
+RD_MLAG_TYPE_MAX_DOMAIN_ID_LEN    ,16,,,
+RD_MLAG_TYPE_MAX_NBR_OF_REMOTE_FDB ,1024,,,
+,,,,

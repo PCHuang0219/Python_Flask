@@ -1,0 +1,9 @@
+Variable,Value,Description,Json Variable,Mapping Value
+TACACS_Authorization_Command,True,TACACS authorization support,SYS_CPNT_TACACS_PLUS_AUTHORIZATION,
+TACACS_Retransmit_Default,2,TACACS default value of retransmit,SYS_DFLT_TACACS_AUTH_CLIENT_ACCESS_RETRANSMISSIONS,
+TACACS_Retransmit_Max,30,TACACS max value of retransmit,SYS_ADPT_TACACS_MAX_RETRANSMIT,
+TACACS_Retransmit_Min,1,TACACS min value of retransmit,SYS_ADPT_TACACS_MIN_RETRANSMIT,
+TACACS_Server_Port_Number_Default,49,TACACS default server port number ,SYS_DFLT_TACACS_AUTH_CLIENT_SERVER_PORT_NUMBER,
+TACACS_Timeout_Default,5,TACACS default value of timeout ,SYS_DFLT_TACACS_AUTH_CLIENT_TIMEOUTS,
+TACACS_Timeout_Max,540,TACACS max value of timeout,SYS_ADPT_TACACS_MAX_TIMEOUT,
+TACACS_Timeout_Min,1,TACACS min value of timeout,SYS_ADPT_TACACS_MIN_TIMEOUT,

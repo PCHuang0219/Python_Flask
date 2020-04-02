@@ -1,0 +1,161 @@
+Test Case Number,Headline,Import Method,DUT,DiagType
+11,The R/W test for memory device(RAM),Diag_Main,,Stress
+14,The simple R/W test for memory device(RAM),Diag_Main,,Stress
+52,The R/W test for storage disk,Diag_Main,,Stress
+53,The R/W test for external storage disk,Diag_Main,,Stress
+56,The stressapptest test for storage disk,Diag_Main,,Stress
+57,The performance test for storage disk,Diag_Main,,Stress
+58,The R/W test for NVMe storage disk,Diag_Main,,Stress
+59,The performance test for NVMe storage disk,Diag_Main,,Stress
+60,The stressapptest,Diag_Main,,Stress
+61,The mprime test,Diag_Main,,Stress
+62,The performance test for memory,Diag_Main,,Stress
+63,The stress-ng performance test for CPU,Diag_Main,,Stress
+999,The unitest for diag test cases(MFG mode),Diag_Main,,Stress
+1,Check EEPROM of cpu management port,Diag_Main,,Normal
+2,Read MAC address from cpu management port,Diag_Main,,Normal
+4,The probe test cp2112 for usb-to-i2c bus,Diag_Main,,Normal
+5,The R/W test for RTC timer,Diag_Main,,Normal
+6,The R/W and keepalive test for Watchdog timer,Diag_Main,,Normal
+7,The ICMP ECHO test for CPU management interface,Diag_Main,,Normal
+8,Monitor CPUs temperature,Diag_Main,,Normal
+9,TPM test for COM-E,Diag_Main,,Normal
+11,The R/W test for memory device(RAM),Diag_Main,,Normal
+13,The Physical test for memory device(RAM),Diag_Main,,Normal
+31,Get HW information from SMB FRU EEPROM(CP2112),Diag_Main,,Normal
+32,Set HW information into SMB FRU EEPROM(CP2112),Diag_Main,,Normal
+33,Get HW information from PIM FRU EEPROM(CP2112),Diag_Main,,Normal
+34,Set HW information into PIM FRU EEPROM(CP2112),Diag_Main,,Normal
+35,Get transceiver information from transceiver EEPROM,Diag_Main,,Normal
+36,The simple stress test for CP2112 I2C Bus,Diag_Main,,Normal
+52,The R/W test for storage disk,Diag_Main,,Normal
+53,The R/W test for external storage disk,Diag_Main,,Normal
+54,Show COM-E HW information,Diag_Main,,Normal
+56,Show Tomahawk 3 PCIe SPI flash version,Diag_Main,,Normal
+58,The R/W test for NVMe storage disk,Diag_Main,,Normal
+63,The stress-ng performance test for CPU,Diag_Main,,Normal
+70,The R/W test of devices for BMC management,Diag_Main,,Normal
+71,The information check for BMC management,Diag_Main,,Normal
+72,The Fan speed test,Diag_Main,,Normal
+75,Get HW information from FRU EEPROM(BMC),Diag_Main,,Normal
+76,Set HW information into FRU EEPROM(BMC),Diag_Main,,Normal
+77,MFG mode The sensor test for BMC management,Diag_Main,,Normal
+78,The information check for MAC address from COM-E and BMC,Diag_Main,,Normal
+79,Mode check for BCM5396,Diag_Main,,Normal
+80,Power Button test,Diag_Main,,Normal
+82,Test system LED,Diag_Main,,Normal
+83,Set post LED(0x00 - 0xFF),Diag_Main,,Normal
+86,Set FAN LED(OFF->RED->BLUE->AUTO),Diag_Main,,Normal
+88,Console Selection Button test,Diag_Main,,Normal
+89,Reset Button test,Diag_Main,,Normal
+90,Show Board Revision ID,Diag_Main,,Normal
+92,The ICMP ECHO test for BMC MAC2 interface,Diag_Main,,Normal
+94,The ICMP ECHO test for BMC USB0 interface,Diag_Main,,Normal
+97,The RTC test for BMC,Diag_Main,,Normal
+98,The watchdog test for BMC,Diag_Main,,Normal
+99,Send RST signal to CP2112,Diag_Main,,Normal
+104, Show QSFP EEPROM through CP2112,Diag_Main,,Normal
+105,Test QSFP Reset,Diag_Main,,Normal
+106,Verify EEPROM contents of 16 ports GE switch,Diag_Main,,Normal
+107,MFG mode The simple test for show QSFP EEPROM through CP2112,Diag_Main,,Normal
+108,Detecting machine check exceptions,Diag_Main,,Normal
+113, Get HW information from PSU EEPROM,Diag_Main,,Normal
+115,Show Revision of CPLD and FPGA,Diag_Main,,Normal
+118,TPM test for BMC,Diag_Main,,Normal
+119,Verify contents for external bios,Diag_Main,,Normal
+120,Verify contents for iob fpga flash,Diag_Main,,Normal
+121,MFG mode Verify contents for PIM's dom fpga flash,Diag_Main,,Normal
+122,Verify contents for Tomahawk flash,Diag_Main,,Normal
+123,MFG mode Verify contents for PIM's PHY eeproms,Diag_Main,,Normal
+124,Set management port LED(OFF->ON->RECOVER),Diag_Main,,Normal
+125,Show power management controller of Tomahawk,Diag_Main,,Normal
+126,MFG mode Show hot swap controller status of PIM,Diag_Main,,Normal
+128,MFG mode Check all of the voltage from sensors,Diag_Main,,Normal
+129,Test bcm5396 to PIM board by SGMII loopback,Diag_Main,,Normal
+130,The detection and r/w test for eMMC flash,Diag_Main,,Normal
+131,Test oob combo management port SFP loopback,Diag_Main,,Normal
+132,Dump all CPLD and FPGA registers,Diag_Main,,Normal
+134,The R/W test for BMC memory device(RAM) of BMC,Diag_Main,,Normal
+135,Show CPLD usercode,Diag_Main,,Normal
+136,Detect repeater and repeater eeprom,Diag_Main,,Normal
+137,Accton debug card circuit test(LCD/Button/CPLD),Diag_Main,,Normal
+139,Set/Check PIM's max34461 limit,Diag_Main,,Normal
+141,The Test of 16Q init in SPI mode linespeed test,Diag_Main,,Normal
+142,The Test of 16Q deep verification of traffic path,Diag_Main,,Normal
+150,The Test of 10G KR CPU<-->TH3,Diag_Main,,Normal
+151,The Test of 1G SGMII TH3<-->BCM5396,Diag_Main,,Normal
+152,MFG mode The Test of 16Q linespeed,Diag_Main,,Normal
+153,The Test of 4DD linespeed,Diag_Main,,Normal
+154,MFG mode Dump all serdes info,Diag_Main,,Normal
+155,MFG mode The Test of 16Q 40G linespeed,Diag_Main,,Normal
+156,MFG mode The Test for FPGA MDIO 16Q,Diag_Main,,Normal
+157,The Test of 16Q 200G linespeed,Diag_Main,,Normal
+158,MFG mode The Test for FPGA I2C Low-Speed Path QSFP EEPROM,Diag_Main,,Normal
+159,MFG mode The Test for FPGA I2C High-Speed Path,Diag_Main,,Normal
+160,An agent to call 'lspci' utility,Diag_Main,,Normal
+161,Check PCI-E status with 'lspci' utility,Diag_Main,,Normal
+162,Check FPGA PCI-E bus error,Diag_Main,,Normal
+163,Check Tomahawk3 PCI-E bus error,Diag_Main,,Normal
+168,Read TH3 core power voltage,Diag_Main,,Normal
+199,Show PSU status,Diag_Main,,Normal
+204,Reboot BMC,Diag_Main,,Normal
+205,Update BMC firmware from TFTP server(Sideband),Diag_Main,,Normal
+211, Boot to second BMC flash,Diag_Main,,Normal
+300,Set the uS card number of switch board into parameter,Diag_Main,,Normal
+304,Show all diag report,Diag_Main,,Normal
+305,Show command history,Diag_Main,,Normal
+400,Clear all AER mask of all pci devices ,Diag_Main,,Normal
+401,Check if any AER error happened from dmesg,Diag_Main,,Normal
+403,Check if any PCIE-Error happened from messages,Diag_Main,,Normal
+500,(PT only)SMB PT test for COMe side,Diag_Main,,Normal
+501,(PT only)SMB PT test for BMC side,Diag_Main,,Normal
+510,(FT-B only)Present test for full-load chassis,Diag_Main,,Normal
+999,The unitest for diag test cases(MFG mode),Diag_Main,,Normal
+,Monitor PDU,FB_Monitor,,
+,Check scratch pad register,FPGA_IOB_0003,,
+,Verify uptime register,FPGA_IOB_0004,,
+,Verify reset function,FPGA_IOB_0005,,
+,Verify thread control register,FPGA_IOB_0006,,
+,Check interrupt status,FPGA_IOB_0007,,
+,Check the write data buffer in I2C RTC data block,FPGA_DOM_0001,,
+,Check the correctness of the data written to QSFP EEPROM through I2C RTC,FPGA_DOM_0002,,
+,"Check Device ID, FPGA revision, Board ID",FPGA_DOM_0007,,
+,Check scratch pad register,FPGA_DOM_0008,,
+,Verify uptime register -1,FPGA_DOM_0010,,
+,Verify thread control register,FPGA_DOM_0011,,
+,Verify thread control register -1,FPGA_DOM_0012_4,,
+,Check interrupt status -1,FPGA_DOM_0012_5,,
+,Check interrupt status -2,FPGA_DOM_0012_6,,
+,Check FPGA reset function,FPGA_DOM_0013,,
+,Check max. temperature register,FPGA_DOM_0014,,
+,QSFP interrupt and interrupt mask,FPGA_DOM_0017,,
+,QSFP port reset,FPGA_DOM_0018,,
+,QSFP low-power mode,FPGA_DOM_0019,,
+,PHY firmware load control and status,FPGA_DOM_0020,,
+,Device interrupt status and mask,FPGA_DOM_0021,,
+,Device power bad status,FPGA_DOM_0022,,
+,Device power good mask,FPGA_DOM_0023,,
+,Device power control,FPGA_DOM_0024,,
+,Device reset control,FPGA_DOM_0025,,
+,Device reset control -1,FPGA_DOM_0026,,
+,Verify MDIO error status by holding PHY in reset status,FPGA_DOM_0027,,
+BMC-0010,Access BMC - From Microserver,OpenBMC_0010,,
+BMC-0020,Quit BMC - From Microserver,OpenBMC_0020,,
+BMC-0030,SoL - Access Microserver,OpenBMC_0030,,
+BMC-0040,Monitoring Temperature Sensor,OpenBMC_0040,COMe,
+BMC-0050,To control GPIOs,OpenBMC_0050,COMe,
+BMC-0060,Fan Control - Set Fan Speed,OpenBMC_0060,BMC,
+,,OpenBMC_0043,,
+,,OpenBMC_0044,,
+,,OpenBMC_0045,,
+,,OpenBMC_0046,,
+,,OpenBMC_0047,,
+,,OpenBMC_0048,,
+,,OpenBMC_0049,,
+,,OpenBMC_0050,,
+,,OpenBMC_0051,,
+,,OpenBMC_0052,,
+SC001,CPU-Memory Test,System_1000,,
+SF001,FPGA-I2C Test _Stress FPGA with both path low speed path and high speed path,System_3000,,
+SI001,FPGA-I2C Test,System_2000,,
+ST001,Traffic Test,System_4000,,

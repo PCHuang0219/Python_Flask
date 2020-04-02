@@ -1,0 +1,4 @@
+USER_Name_Len_MAX,32,Maximum length of user name
+USER_Password_Len_MAX,32,Maximum length of password
+USER_Name_Len_MIN,1,Minimum length of user name
+USER_Password_Len_MIN,1,Minimum length of password

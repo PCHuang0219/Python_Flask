@@ -1,0 +1,12 @@
+Variable,Value,Description,Json Variable,Mapping Value
+Port_Channel_Max,16,Maximum port-channel in DUT (the value here should be integer),SYS_ADPT_MAX_NBR_OF_TRUNK_PER_SYSTEM,
+Port_Channel_1st_ID,449,The first ID of port trunk for trap,SYS_ADPT_TRUNK_1_IF_INDEX_NUMBER,
+Port_Channel_Flow_Control,Disable,Default status of Flow Control,SYS_DFLT_PORT_FLOW_CONTROL,"""1 2"" ""Enable Disable"""
+Port_Channel_LACP_Admin_Key_Maximum,65535,Admin-Key maximum,,"1 2 ""Enable Disable"""
+Port_Channel_LACP_Admin_Key_Minimum,0,Admin-Key minimum,,
+Port_Channel_LACP_Port_Priority,32768,Default LACP port priority,SYS_DFLT_LACP_PORT_DEFAULT_PRIORITY,
+Port_Channel_LACP_System_Priority,32768,Default LACP system priority,SYS_DFLT_LACP_SYSTEM_DEFAULT_PRIORITY,
+Port_Channel_LACP_Timeout,long,Default LACPDU timeout,,
+Port_Channel_Max_Member,8,Maximum number of FE port per port-channel in DUT (the value here should be integer),SYS_ADPT_MAX_NBR_OF_PORT_PER_TRUNK,
+,,,,
+,,,,

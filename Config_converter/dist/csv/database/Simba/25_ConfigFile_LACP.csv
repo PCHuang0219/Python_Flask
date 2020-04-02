@@ -1,0 +1,7 @@
+Variable,Value,Description,Json Variable,Mapping Value
+LACP_Admin_Key_Maximum,65535,Admin-Key maximum,,
+LACP_Admin_Key_Minimum,0,Admin-Key minimum,,
+LACP_Port_Priority,32768,Default LACP port priority,SYS_DFLT_LACP_PORT_DEFAULT_PRIORITY,
+LACP_System_Priority,32768,Default LACP system priority,SYS_DFLT_LACP_SYSTEM_DEFAULT_PRIORITY,
+LACP_Timeout,long,Default LACPDU timeout,,
+LACP_Delay_Time,9,Delay time,,

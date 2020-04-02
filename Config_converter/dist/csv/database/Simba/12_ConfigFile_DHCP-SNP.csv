@@ -1,0 +1,10 @@
+Variable,Value,Description,Json Variable,Mapping Value
+DHCPSNP_Global_Default,disabled,Enabled or Disabled.,SYS_DFLT_DHCPSNP_GLOBAL,"""1 2"" ""enabled disabled"""
+DHCPSNP_Port_Trusted,disabled,Enabled  for yes or Disabled for No,SYS_DFLT_DHCPSNP_PORT_TRUST_MODE,"""1 2"" ""enabled disabled"""
+DHCPSNP_Member_Port_MAX,5,Maximum members are allowed in DHCP Snooping per port,MAX_dhcpSnoopPortMaxNumber,
+DHCPSNP_Vendor_Class_ID_MAX,32,Maximum digits are allowed for DHCP Vendor Class ID,MAXSIZE_dhcpcIfVendorClassId,
+DHCPSNP_VerifyMAC_Default,enabled,Verify MAC Address,SYS_DFLT_DHCPSNP_VERIFY_MAC_ADDRESS,"""1 2"" ""enabled disabled"""
+DHCPSNP_RateLimit_MAX,2048,MAX DHCP Snooping rate limit value,SYS_ADPT_DHCPSNP_MAX_SYSTEM_RATELIMIT,
+DHCPSNP_RateLimit_MIN,1,MIN DHCP Snooping rate limit value,SYS_ADPT_DHCPSNP_MIN_SYSTEM_RATELIMIT,
+DHCPSNP_RateLimit_Default,unlimited,Default DHCP Snooping rate limit value,SYS_DFLT_DHCPSNP_SYSTEM_RATELIMIT,"""0 1"" ""unlimited pkt"""
+DHCPSNP_Default_IP_wo_DHCP,0.0.0.0,,,

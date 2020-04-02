@@ -1,0 +1,12 @@
+Variable,Value,Description,Json Variable,Mapping Value
+Tcam_ipv4_std_Entry,2,,,
+Tcam_ipv4_ext_Entry,2,,,
+Tcam_ipv6_std_Entry,2,,,
+Tcam_ipv6_ext_Entry,2,,,
+Tcam_mac_Entry,2,,,
+Tcam_ipv4_std_Entry_Default,0,,,
+Tcam_ipv4_ext_Entry_Default,0,,,
+Tcam_ipv6_std_Entry_Default,0,,,
+Tcam_ipv6_ext_Entry_Default,0,,,
+Tcam_mac_Entry_Default,0,,,
+Tcam_All_Entry_Default,0,,,
