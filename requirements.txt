@@ -3,7 +3,7 @@ requests==2.21.0
 pexpect==4.0.1
 flask==1.0.3
 paramiko==2.4.2
-cryptography==2.4.2
+cryptography==3.2
 pexpect_serial==0.0.4
 pyserial
 pysnmp==4.4.4
