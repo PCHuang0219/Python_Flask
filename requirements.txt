@@ -2,7 +2,7 @@ pymongo==3.8.0
 requests==2.21.0
 pexpect==4.0.1
 flask==1.0.3
-paramiko==2.4.2
+paramiko==2.10.1
 cryptography==2.4.2
 pexpect_serial==0.0.4
 pyserial
